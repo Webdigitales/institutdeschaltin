@@ -9,7 +9,7 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-$brand-primary:         #FFF55B; // #337a
+$brand-primary:         #000; // #337a
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
@@ -32,10 +32,10 @@ $nav-link-hover-bg: transparent;
 
 
 //** Colors btn-primary
-$btn-primary-color : #000;
+$btn-primary-color : #fff;
 $btn-primary-bg : $brand-primary;
 $btn-color-hover: #fff;
-$btn-bg-hover: #000;
+$btn-bg-hover: #87d5e4;
 
 //** Footer BG
 $footer-bg: #000;

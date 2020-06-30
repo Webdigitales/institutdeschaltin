@@ -1,0 +1,52 @@
+//-----------------
+// IMPORT 
+//-----------------
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap";
+
+// Mixin's
+@import "mixins";
+
+// Typo's
+@import "typographie";
+
+// Reset Bootstrap sass
+@import "reset_bootstrap_sass";
+
+
+//------------------
+//IMPORT COMPONENTS
+//------------------
+
+// Buttons
+@import "components/button";
+
+// Form's
+@import "components/form";
+
+// Dropdown
+@import "components/dropdown";
+
+// Nav
+@import "components/nav";
+
+//-----------------------------
+// IMPORT LAYOUT: PAGES SCSS
+//-----------------------------
+
+// Header
+@import "layout/header";
+
+// Main
+@import "layout/main";
+
+// Footer
+@import "layout/footer";
+
+// Banner
+@import "layout/banner";
+

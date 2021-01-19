@@ -1,0 +1,115 @@
+fieldLayouts:
+  1a8f0b42-7d53-4419-948a-a76931fbc722:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            autofocus: false
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a1ce91a5-57d4-4265-947f-535f54610d08
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a86216ee-c6c3-45c8-a564-2d362739286f
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 38c4e94a-7885-4f9a-9a43-af0281c8d38b
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Page header'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 32712cfb-8a4d-4f62-ae43-0e6ed9c8714f
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Contenu principal'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Call to action'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 4
+handle: caseStudy
+hasTitleField: false
+name: Référence
+section: c07eddc2-b81a-4da4-b158-be51d92e0dba
+sortOrder: 1
+titleFormat: '{heading}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

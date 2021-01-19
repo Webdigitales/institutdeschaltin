@@ -1,0 +1,310 @@
+/**
+ * Global layout styles
+ */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	@apply rounded;
+}
+
+.site-flashnews {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@apply bg-black;
+
+	.tag {
+		@apply mr-1 mb-0;
+	}
+
+	.flashnews__content {
+		@apply p-0.5;
+	}
+
+	.link--wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		@apply bg-black duration-300;
+
+		&:hover {
+			@apply bg-primary text-white;
+
+			.tag {
+				@apply text-white;
+			}
+		}
+	}
+
+	.flashnews__message {
+		@apply text-white;
+	}
+}
+
+.header__phone {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999999;
+
+	.link-phone {
+		display: flex;
+		width: 52px;
+		height: 52px;
+		justify-content: center;
+		align-items: center;
+
+		.icon {
+			fill: theme('colors.white');
+		}
+	}
+}
+
+/**
+ * Main header styles
+ */
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 900;
+	align-items: center;
+	@apply bg-white;
+
+	.header__item {
+		flex: 0 1 auto;
+
+		&.header__cta {
+			display: flex;
+			align-items: center;
+
+			.header__lang {
+				@apply mr-1;
+			}
+		}
+	}
+
+	@apply
+		py-1
+		px-1;
+
+	@media (min-width: theme('screens.md')) {
+		@apply
+		py-1.5
+		px-2.5;
+	}
+
+	.logo-wrapper {
+		flex: 0 1 auto;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+	}
+}
+
+.mean-container {
+	.mean-bar {
+		position: fixed;
+		float: none;
+		top: 0;
+		left: 0;
+	}
+
+	.site-header {
+		top: 52px;
+	}
+}
+
+.site-wrapper {
+	position: relative;
+}
+
+/**
+ * Main content styles
+ */
+.path-home {
+	.section-banner {
+		display: flex;
+		align-items: center;
+		flex-flow: row wrap;
+		position: relative;
+		height: calc(100vh - 80px);
+
+		&.section--img {
+			height: 400px;
+
+			@media (min-width: theme('screens.md')) {
+				height: 480px;
+			}
+		}
+
+		.section__heading {
+			width: 100%;
+		}
+
+		.section__video {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			z-index: -1;
+
+			.video {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				background-color: rgba(0,0,0, .30);
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 1;
+			}
+		}
+
+		.section__image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			z-index: -1;
+
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.heading--1 {
+		@apply text-white;
+		z-index: 2;
+	}
+}
+
+/**
+ * Main footer styles
+ */
+.site-footer {
+	.heading {
+		@apply mb-1;
+	}
+
+	.col-span-1 {
+		&:first-child {
+			@media (min-width: theme('screens.md')) {
+				padding-right: 1rem;
+			}
+		}
+	}
+
+	.footer__bottom {
+		border-top: 1px solid theme('colors.gray.100');
+		@apply py-3 mt-3;
+
+		@media (min-width: theme('screens.md')) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.site-vat {
+			border-left: 1px solid theme('colors.gray.100');
+			@apply pl-1 ml-1;
+		}
+
+		.nav-wrapper {
+			flex: 1 1 auto;
+			display: flex;
+
+			.nav {
+				width: 100%;
+
+				.nav__list {
+					width: 100%;
+					display: flex;
+					align-items: center;
+
+					@media (min-width: theme('screens.md')) {
+						justify-content: flex-end;
+					}
+
+					@media (max-width: theme('screens.md')) {
+						flex-flow: row wrap;
+					}
+
+					li + li {
+						@apply ml-1 mt-0;
+					}
+				}
+			}
+		}
+	}
+
+	ul {
+		& + .list {
+			@apply mt-1;
+		}
+
+		li {
+			& + li {
+				@apply mt-0.5;
+			}
+		}
+
+		a {
+			@apply duration-300;
+
+			&:hover {
+				@apply text-primary;
+			}
+		}
+	}
+}
+
+.sidebar {
+	border: 2px solid theme('colors.gray.100');
+	@apply rounded p-1.5;
+
+	p, ul {
+		a:not(.button) {
+			@apply text-primary;
+			transition: color .2s;
+
+			&:hover {
+				@apply text-secondary;
+			}
+		}
+	}
+
+
+	.list + .list {
+		border-top: 2px solid theme('colors.gray.100');
+		@apply mt-1.5 pt-1.5;
+	}
+}

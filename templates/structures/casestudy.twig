@@ -1,0 +1,47 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block headLinks %}
+	{{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	<section class="section banner banner--with-img bg--secondary-offset">
+		<div class="grid grid--col-2 grid--offset-1">
+			<div class="col-span-1 md:pl-4 flex flex-col justify-center md:order-2">
+				<div class="button-wrapper mb-2">
+					<a href="{{ url('case study'|t) }}" class="button button--back button--with-icon">
+						<svg class="button__icon icon icon--left" width="5" height="8" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M.153 3.594L3.681.168a.467.467 0 01.718 0 .592.592 0 01.136.524l-.694 3.312.694 3.312a.558.558 0 01-.398.672.478.478 0 01-.456-.137L.153 4.436a.58.58 0 010-.785v-.057z"/>
+						</svg>
+						<span class="button__text">{{ 'Back to Case studies'|t }}</span>
+					</a>
+				</div>
+				<span class="tag text-primary">{{ 'Case study'|t }}</span>
+				{% include '_components/heading.twig' with {'headingLevel': '1', 'entity': entry} %}
+			</div>
+			<div class="col-span-1 -mr-1 md:mr-0">
+				{% include '_components/image-portrait.twig' with {'entity': entry} %}
+			</div>
+		</div>
+	</section>
+	<div class="news__summary">
+		<div class="grid grid--offset-2">
+			<div class="col-span-1">
+				<div class="text text--intro">
+					{{ entry.summary }}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include "_components/_matrix/index.twig" %}
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+	{{ parent() }}
+{% endblock bodyJs %}

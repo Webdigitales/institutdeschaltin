@@ -1,0 +1,98 @@
+/**
+ * Slider styles
+ *
+ * https://swiperjs.com
+ */
+
+.swiper-container {
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.slide__content {
+	position: relative;
+	padding: 5rem 4rem 4rem 4rem;
+
+	@media (min-width: theme('screens.lg')) {
+		display: flex;
+	}
+
+	.case__image {
+		max-width: 790px;
+		height: 400px;
+		align-self: flex-end;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+
+			@apply rounded;
+		}
+	}
+
+	.case__content {
+		@apply p-2;
+
+		.heading + .tag {
+			@apply mt-1.5;
+		}
+
+		.icon-wrapper {
+			height: 18px;
+			width: 24px;
+
+			@apply mb-1.5;
+
+			.icon {
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+		@media (min-width: theme('screens.lg')) {
+			max-width: 390px;
+			width: 100%;
+			height: 400px;
+			z-index: 1;
+			position: absolute;
+			right: 4rem;
+			top: 1rem;
+			overflow: visible;
+
+			@apply
+			bg-white
+			shadow
+			rounded;
+		}
+
+	}
+}
+
+.slider {
+	max-width: 1200px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	@apply text-primary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-button-prev {
+	left: 0;
+}
+.swiper-button-next {
+	right: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+}

@@ -1,0 +1,131 @@
+/**
+ * Buttons styles
+ */
+
+.button {
+	@apply
+	px-2
+	rounded-full
+	text-white
+	transition-colors
+	duration-300
+	no-underline
+	uppercase
+	inline-flex
+	h-3
+	tracking-wide
+	shadow
+	items-center
+	text-sm;
+	transform: scale(1);
+	transition: all .3s ease-in-out;
+	outline: none !important;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	.button__text {
+		@apply self-center;
+		transform: none !important;
+	}
+
+  &--primary {
+		@apply
+		text-white
+		bg-primary;
+
+    &:focus {
+			background-color: theme('colors.primary.lighter');
+			color: theme('colors.primary.default');
+    }
+  }
+
+  &--secondary {
+		background-color: theme('colors.primary.default');
+
+    &:focus {
+			background-color: theme('colors.primary.lighter');
+			color: theme('colors.primary.default');
+    }
+  }
+
+	&--green {
+		background-color: theme('colors.green');
+	}
+
+	&--whatsapp {
+		.icon {
+			@apply mr-0.5;
+		}
+	}
+
+  &--large {
+    @apply px-4 py-2;
+  }
+
+	&--back {
+		@apply
+		bg-white
+		text-black;
+
+		.icon {
+			fill: theme('colors.primary.default');
+		}
+	}
+}
+
+.link {
+	display: inline-flex;
+	align-items: center;
+
+	.link__text {
+		@apply
+		text-primary
+		duration-300;
+	}
+
+	.icon {
+		fill: theme('colors.black');
+	}
+
+	&:hover {
+		.link__text {
+			@apply text-secondary;
+		}
+	}
+}
+
+.link, .button {
+	&--with-icon {
+		.icon {
+			@apply duration-300;
+
+			&--right {
+				transform: translateX(8px);
+			}
+
+			&--left {
+				transform: translateX(-8px);
+			}
+		}
+
+		&:hover {
+			.icon {
+				&--right {
+					transform: translateX(12px);
+				}
+
+				&--left {
+					transform: translateX(-12px);
+				}
+			}
+		}
+	}
+}
+
+button {
+	&:focus {
+		outline: none !important;
+	}
+}

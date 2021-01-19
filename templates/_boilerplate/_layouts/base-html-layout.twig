@@ -1,0 +1,81 @@
+{# -- Base HTML layout template that all HTML requests inherit from -- #}
+{#
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                headMeta                                 │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                headLinks                                │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                 headJs                                  │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                 headCss                                 │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│                                 headContent                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                bodyHtml                                 │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                 bodyJs                                  │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│                                 bodyContent                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+#}
+
+{% extends "_boilerplate/_layouts/base-web-layout.twig" %}
+
+{% block htmlTag %}
+<html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+{% endblock htmlTag %}
+
+{# -- Page content that should be included in the <head> -- #}
+{% block headContent %}
+
+	{% include "_boilerplate/_partials/head-meta.twig" %}
+	{# -- Any <meta> tags that should be included in the <head> #}
+	{% block headMeta %}
+	{% endblock headMeta %}
+
+	{# -- Any <link> tags that should be included in the <head> #}
+	{% block headLinks %}
+	{% endblock headLinks %}
+
+	{# -- Inline and critical CSS #}
+	<style>
+		[v-cloak] {
+			display: none !important;
+		}
+
+		{# -- Any CSS that should be included before </head> -- #}
+		{% block headCss %}
+		{% endblock headCss %}
+	</style>
+	{% include "_boilerplate/_partials/head-css.twig" %}
+
+	{# -- Any JavaScript that should be included before </head> -- #}
+	{% block headJs %}
+	{% endblock headJs %}
+	{# -- Inline and polyfill JS #}
+	{% include "_boilerplate/_partials/head-js.twig" %}
+
+{% endblock headContent %}
+
+{# -- Page content that should be included in the <body> -- #}
+{% block bodyContent %}
+	{# -- Page content that should be included in the <body> -- #}
+	{% block bodyHtml %}
+	{% endblock bodyHtml %}
+
+	{#- - Site-wide JavaScript - -#}
+	{% include "_boilerplate/_partials/footer-js.twig" %}
+
+	{# -- Any JavaScript that should be included before </body> -- #}
+	{% block bodyJs %}
+	{% endblock bodyJs %}
+{% endblock bodyContent %}

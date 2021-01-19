@@ -1,0 +1,65 @@
+fieldLayouts:
+  df1b3402-257c-4ea2-a598-9a9a16e72aa5:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: __blank__
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a1ce91a5-57d4-4265-947f-535f54610d08
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0770e3e0-f0c3-41a2-b5f4-3c30ad3a4539
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Contenu
+        sortOrder: 1
+handle: partner
+hasTitleField: false
+name: Partenaire
+section: bb82949d-0f4f-4146-b18c-b3883d2cabbf
+sortOrder: 1
+titleFormat: '{heading}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

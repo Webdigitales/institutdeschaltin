@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: landingPage
+name: 'Landing page'
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484:
+    enabledByDefault: true
+    hasUrls: true
+    template: structures/landing-page
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 0410dc47-fee9-42d8-b719-64382529a574
+type: structure

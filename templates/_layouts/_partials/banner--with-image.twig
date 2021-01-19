@@ -1,0 +1,12 @@
+<section class="section banner banner--with-img">
+	<div class="grid grid--col-2 grid--offset-1">
+		<div class="col-span-1 md:pr-4 flex flex-col justify-center">
+			{% include '_components/heading.twig' with {'headingLevel': '1', 'entity': entry} %}
+			{% include '_components/summary.twig' with {'entity': entry} %}
+			{% include '_components/button.twig' with {'entity': entry} %}
+		</div>
+		<div class="col-span-1">
+			{% include '_components/image-portrait.twig' with {'entity': entry} %}
+		</div>
+	</div>
+</section>

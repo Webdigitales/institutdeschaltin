@@ -1,0 +1,53 @@
+fieldLayouts:
+  d1186833-257d-40f8-822d-8eae1ae98b10:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: b16cbe4c-4d50-45fc-81dc-fa916cc2a69b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4ca2da81-4b18-4721-b01b-4e912d2c2856
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 132f5cab-adae-46b1-a621-463cfb81f139
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a6aef78c-fa88-4853-ac84-74bffb24b3f1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Job
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Call to action'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: SEO
+        sortOrder: 3
+handle: jobsPost
+hasTitleField: false
+name: 'Jobs post'
+section: 3e5a9a8d-32e0-449e-ada7-2da5b779c575
+sortOrder: 1
+titleFormat: '{heading}'

@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: fr
+hasUrls: true
+language: fr-BE
+name: 'Institut de Schaltin'
+primary: true
+siteGroup: b7c57c63-a882-48cf-821a-46babb7682f7
+sortOrder: 1

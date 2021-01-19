@@ -1,0 +1,88 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set posts = craft.entries()
+	.section('jobsPost')
+	.limit(8)
+%}
+
+{% paginate posts as pageInfo, pageEntries %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	{% include "_layouts/_partials/banner--without-image.twig" %}
+	<section class="section section-jobs section--multiple">
+		<div class="section__content">
+			<div class="grid grid--offset-2">
+				{% for post in pageEntries %}
+					<div class="col-span-1">
+						<section class="card card-job card--list">
+							<a href="{{ post.url }}" class="card__link link--wrapper">
+								<div class="card__header sm:w-full md:w-auto">
+									{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': post} %}
+									<span class="job__keywords tag text-gray-300">
+										{% if post.jobAddress.locality|length %}
+											{{ post.jobAddress.locality|raw }}
+										{% endif %}
+										{% if post.jobPeriod|length %}
+											/ {{ post.jobPeriod }}
+										{% endif %}
+										{% if post.jobContractType|length %}
+											/ {{ post.jobContractType }}
+										{% endif %}
+									</span>
+								</div>
+								<div class="card__content sm:w-full md:w-auto sm:mt-1 md:mt-0">
+									<span class="link link--with-icon">
+										<span class="link__text">{{ 'See job'|t }}</span>
+										<svg class="link__icon icon icon--right" width="5" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M4.398 3.594L.87.168a.467.467 0 00-.717 0 .592.592 0 00-.137.524L.71 4.004.016 7.316a.558.558 0 00.398.672.478.478 0 00.456-.137l3.528-3.415a.58.58 0 000-.785v-.057z"/></svg>
+									</span>
+								</div>
+							</a>
+						</section>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	{% if craft.entries().section('jobsPost')|length > 8 %}
+		<nav class="pagination-wrapper">
+			<ul class="pagination">
+				{% if pageInfo.prevUrl %}
+					<li class="pagination__item">
+						<a href="{{ pageInfo.prevUrl }}" class="pagination__link link--prev"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6 1.41-1.41zM6 6h2v12H6V6z" fill="#fff"/></svg></a>
+					</li>
+				{% endif %}
+
+				{% for page, url in pageInfo.getPrevUrls(5) %}
+					<li class="pagination__item">
+						<a href="{{ url }}" class="pagination__link">{{ page }}</a>
+					</li>
+				{% endfor %}
+				<li class="pagination__item">
+					<span class="pagination__link current">{{ pageInfo.currentPage }}</span>
+				</li>
+				{% for page, url in pageInfo.getNextUrls(5) %}
+					<li class="pagination__item">
+						<a href="{{ url }}" class="pagination__link">{{ page }}</a>
+					</li>
+				{% endfor %}
+
+				{% if pageInfo.nextUrl %}
+					<a href="{{ pageInfo.nextUrl }}" class="pagination__link link--next"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6-1.41 1.41zM16 6h2v12h-2V6z" fill="#fff"/></svg></a>
+				{% endif %}
+			</ul>
+		</nav>
+	{% endif %}
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

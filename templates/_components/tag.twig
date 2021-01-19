@@ -1,0 +1,9 @@
+{# -- Tag template -- #}
+
+{#
+	Set headingLevel value when you include it like AND entity value like :
+	{% include '_components/heading.twig' with {'headingLevel': '1', 'entity': entry} %}
+#}
+{% if entity.tag|length %}
+	<span class="tag">{{ entity.tag }}</span>
+{% endif %}

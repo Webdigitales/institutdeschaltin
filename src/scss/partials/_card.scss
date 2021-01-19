@@ -1,0 +1,167 @@
+/**
+ * Card styles
+ */
+
+.card {
+	@apply
+	h-full
+	flex
+	flex-col;
+
+	img {
+		@apply rounded;
+	}
+
+	&--grid {
+		.card__content {
+			@apply mt-2;
+		}
+	}
+
+	.picture {
+		overflow: hidden;
+		display: block;
+		position: relative;
+
+		img {
+			transform: scale(1);
+			transform-origin: center;
+			transition: transform 500ms ease;
+		}
+	}
+
+	.link--wrapper {
+		&:hover {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	&--shadow {
+		.link--wrapper {
+			@apply
+			bg-white
+			shadow
+			overflow-hidden
+			rounded
+			h-full;
+
+			transform: translateY(0);
+			transition: all 500ms ease;
+
+			&:hover {
+				transform: translateY(-0.5rem);
+				@aaply shadow-hover;
+			}
+		}
+
+		img {
+			@apply rounded-none;
+		}
+
+		.card__content {
+			@apply p-1 pt-0;
+		}
+	}
+
+	&-news {
+		.card__link {
+			&.link--wrapper {
+				position: relative;
+			}
+		}
+
+		.card__header {
+			z-index: 3;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-end;
+			@apply p-1;
+		}
+
+		.card__content {
+			z-index: 1;
+			margin: 0;
+			position: relative;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 1;
+				background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.20) 96%);
+			}
+		}
+
+		.heading {
+			@apply text-white;
+		}
+	}
+
+	&--list {
+		.card__link {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: space-between;
+			@apply p-1;
+
+			&:hover {
+				@apply bg-secondary-lighter;
+			}
+		}
+
+		.tag {
+			@apply mt-1;
+		}
+	}
+
+	&-job {
+		.card__link {
+			@apply duration-300;
+		}
+	}
+
+	&-partner {
+		@apply
+		bg-white
+		border-1
+		border-gray-100;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 50%;
+			@apply m-1.5;
+		}
+
+		.link--wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+
+			&:hover {
+				img {
+					filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+					filter: gray; /* IE5+ */
+					-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+					-webkit-transition: all .3s ease-in-out;
+					transform: none;
+				}
+			}
+		}
+	}
+}

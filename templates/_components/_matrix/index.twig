@@ -1,0 +1,7 @@
+{% set lazyImage = false %}
+{% for block in entry.matrix.all() %}
+	{% include ('_components/_matrix/_partials/_' ~ 'block_' ~ block.type.handle) %}
+	{% if block.type.handle == "image" %}
+		{% set lazyImage = true %}
+	{% endif %}
+{% endfor %}

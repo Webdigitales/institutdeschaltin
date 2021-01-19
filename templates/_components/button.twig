@@ -1,0 +1,20 @@
+{# -- Button template -- #}
+
+{#
+	Set entity value when you include it like :
+	{% include '_components/button.twig' with {'entity': entry} %}
+#}
+
+{% if entity.button|length %}
+	{% if entity.button.getLinkAttributes|length %}
+		{% set buttonAttributes = entity.button.getLinkAttributes ({
+			class: 'button button--primary'
+		}) %}
+
+		<div class="button-wrapper">
+			<a{{ buttonAttributes }}>
+				<span class="button__text">{{ entity.button.text }}</span>
+			</a>
+		</div>
+	{% endif %}
+{% endif %}

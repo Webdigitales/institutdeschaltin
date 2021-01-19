@@ -1,0 +1,41 @@
+fieldLayouts:
+  2c6fd7ad-b994-4b91-9c9f-9680114de03d:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 97de7b47-515f-4d89-a189-4585140f7564
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Page header'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Call to action'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: SEO
+        sortOrder: 3
+handle: cookies
+hasTitleField: false
+name: Cookies
+section: c8869b87-33d5-450c-be1b-ed87cf5f228a
+sortOrder: 1
+titleFormat: '{heading}'

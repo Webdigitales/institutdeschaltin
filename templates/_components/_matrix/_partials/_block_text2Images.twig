@@ -1,0 +1,23 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{# Matrix content #}
+{% block matrixContent %}
+	<section class="section section-text-2images">
+		<div class="grid grid--col-2">
+			<div class="col-span-1">
+				<div class="section__picture">
+					{% include '_components/image-portrait.twig' with {'entity': matrix} %}
+					{% include '_components/image-small.twig' with {'entity': matrix} %}
+				</div>
+			</div>
+			<div class="col-span-1 lg:px-4 flex flex-col justify-center">
+				<div class="section__content">
+					{% include '_components/heading.twig' with {'entity': matrix, 'headingLevel': '2'} %}
+					{% include '_components/text.twig' with {'entity': matrix} %}
+					{% include '_components/button.twig' with {'entity': matrix} %}
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,9 @@
+handle: mainNavigation
+instructions: 'Navigation principale du site'
+maxNodes: ''
+name: 'Navigation principale'
+propagateNodes: true
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: 49e0df06-61eb-44a0-a591-e561f0bb75d7

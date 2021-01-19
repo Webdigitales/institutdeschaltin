@@ -1,0 +1,169 @@
+field: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+fieldLayouts:
+  6f30f38b-9d84-4491-9d7c-374eb89b6778:
+    tabs:
+      -
+        fields:
+          6c3b9c1c-5126-46d3-8877-1fa714eb9877:
+            required: false
+            sortOrder: 1
+          9fc41b3c-b0a3-444c-8a2e-b14b89a2d856:
+            required: false
+            sortOrder: 2
+          beb75040-f7a9-475a-bfbd-8cc0b973fccd:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  6c3b9c1c-5126-46d3-8877-1fa714eb9877:
+    contentColumnType: text
+    fieldGroup: null
+    handle: tag
+    instructions: ''
+    name: Tag
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  9fc41b3c-b0a3-444c-8a2e-b14b89a2d856:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  beb75040-f7a9-475a-bfbd-8cc0b973fccd:
+    contentColumnType: text
+    fieldGroup: null
+    handle: button
+    instructions: ''
+    name: Bouton
+    searchable: true
+    settings:
+      allowCustomText: '1'
+      allowTarget: '1'
+      allowedLinkNames:
+        2: entry
+        7: email
+        8: tel
+        9: url
+      autoNoReferrer: '1'
+      defaultLinkName: entry
+      defaultText: ''
+      enableAriaLabel: ''
+      enableTitle: ''
+      typeSettings:
+        __assoc__:
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: typedlinkfield\fields\LinkField
+handle: cta
+name: 'Call to action'
+sortOrder: 1

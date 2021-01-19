@@ -1,0 +1,18 @@
+contentColumnType: string(1000)
+fieldGroup: 3cf03712-85e6-458d-b266-ebbcff427daa
+handle: heading
+instructions: ''
+name: Titre
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 250
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

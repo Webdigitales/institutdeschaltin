@@ -1,0 +1,48 @@
+/**
+	Overrides app styles
+	Uses Tailwindcss: https://tailwindcss.com
+	Edit global variables in tailwind.config.js to suit your needs
+ */
+
+.site-header .logo-wrapper a {
+	max-width: 160px;
+
+	.logo {
+		width: 100%;
+		height: auto;
+	}
+}
+
+// Override sharethis plugin z-index
+#st-1 {
+	z-index: 10 !important;
+}
+
+.meanmenu-reveal {
+	display: none !important;
+}
+
+blockquote {
+	text-align: center;
+	@apply text-2xl
+	text-black
+	font-heading;
+}
+
+.header__social {
+	position: fixed;
+	right: 15px;
+	top: 0;
+	z-index: 9999999;
+	height: 56px;
+	display: flex;
+	align-items: center;
+
+	.list.list-social .list__link {
+		background-color: transparent;
+
+		.list__icon {
+			fill: theme('colors.white');
+		}
+	}
+}

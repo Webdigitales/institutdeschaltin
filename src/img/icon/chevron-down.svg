@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon/chevron-down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Layout/Header-without-banner" transform="translate(-579.000000, -48.000000)" fill="#222325">
+            <g id="Nav">
+                <g transform="translate(403.000000, 43.000000)">
+                    <g id="dropdown" transform="translate(102.000000, 0.000000)">
+                        <g id="icon/chevron-down" transform="translate(74.000000, 5.000000)">
+                            <g id="Path">
+                                <path d="M5.05071429,3.9855 L8.58642857,0.273 C8.76576748,0.0780325617 9.03134135,-0.000159447899 9.28107666,0.0684771326 C9.53081197,0.137113713 9.72584408,0.341897433 9.79121225,0.604119507 C9.85658043,0.866341581 9.78211185,1.14519415 9.59642857,1.3335 L5.55571429,5.57625 C5.27678582,5.86903645 4.82464275,5.86903645 4.54571429,5.57625 L0.505,1.3335 C0.319316725,1.14519415 0.244848145,0.866341581 0.310216317,0.604119507 C0.375584489,0.341897433 0.570616603,0.137113713 0.820351912,0.0684771326 C1.07008722,-0.000159447899 1.33566109,0.0780325617 1.515,0.273 L5.05071429,3.9855 Z" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

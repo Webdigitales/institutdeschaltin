@@ -1,0 +1,57 @@
+fieldLayouts:
+  4fe04736-0947-4df2-a37d-6803a70081ce:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a1ce91a5-57d4-4265-947f-535f54610d08
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 97de7b47-515f-4d89-a189-4585140f7564
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 646a52cb-addd-4be0-873e-12fb37829ca0
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Page header'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 32712cfb-8a4d-4f62-ae43-0e6ed9c8714f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Contenu principal'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Call to action'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: SEO
+        sortOrder: 4
+handle: default
+hasTitleField: false
+name: 'Page par défaut'
+section: f82c5147-f86c-4271-bddd-efe754d2ac08
+sortOrder: 1
+titleFormat: '{heading}'

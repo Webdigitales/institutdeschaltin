@@ -1,0 +1,9 @@
+handle: footerLegalNav
+instructions: ''
+maxNodes: ''
+name: 'Footer legal nav'
+propagateNodes: true
+sortOrder: 5
+structure:
+  maxLevels: null
+  uid: 1c0ef959-74db-4623-b9c0-b9b3b569636c

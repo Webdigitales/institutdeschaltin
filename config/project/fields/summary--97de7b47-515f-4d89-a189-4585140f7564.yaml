@@ -1,0 +1,22 @@
+contentColumnType: text
+fieldGroup: 3cf03712-85e6-458d-b266-ebbcff427daa
+handle: summary
+instructions: ''
+name: Intro
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: ''
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Simple.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: language
+type: craft\redactor\Field

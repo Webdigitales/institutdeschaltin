@@ -1,0 +1,91 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set posts = craft.entries()
+	.section('caseStudy')
+	.orderBy('dateCreated desc')
+	.limit(6) %}
+
+{% paginate posts as pageInfo, pageEntries %}
+
+{% block headLinks %}
+	{{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	{% include "_layouts/_partials/banner--without-image.twig" %}
+	{# News #}
+	<section class="section section-news section--multiple">
+		<div class="section__content">
+			<div class="grid grid--col-3">
+				{% for post in pageEntries %}
+					<div class="col-span-1">
+						<section class="card card-news">
+							<a href="{{ post.url }}" class="card__link link--wrapper">
+								<div class="card__header">
+									<time class="tag w-full block text-primary"
+												datetime="{{ entry.postDate | date('d/m/Y') }}">{{ entry.postDate | date('d/m/Y') }}</time>
+									{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': post} %}
+								</div>
+								<div class="card__content">
+									{% include '_components/image-landscape.twig' with {'entity': post} %}
+								</div>
+							</a>
+						</section>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	{% if craft.entries().section('caseStudy')|length > 6 %}
+		<nav class="pagination-wrapper">
+			<ul class="pagination">
+				{% if pageInfo.prevUrl %}
+					<li class="pagination__item">
+						<a href="{{ pageInfo.prevUrl }}" class="pagination__link link--prev">
+							<svg width="5" height="8" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M.153 3.594L3.681.168a.467.467 0 01.718 0 .592.592 0 01.136.524l-.694 3.312.694 3.312a.558.558 0 01-.398.672.478.478 0 01-.456-.137L.153 4.436a.58.58 0 010-.785v-.057z"
+									fill="#fff"/>
+							</svg>
+						</a>
+					</li>
+				{% endif %}
+
+				{% for page, url in pageInfo.getPrevUrls(5) %}
+					<li class="pagination__item">
+						<a href="{{ url }}" class="pagination__link">{{ page }}</a>
+					</li>
+				{% endfor %}
+				<li class="pagination__item">
+					<span class="pagination__link current">{{ pageInfo.currentPage }}</span>
+				</li>
+				{% for page, url in pageInfo.getNextUrls(5) %}
+					<li class="pagination__item">
+						<a href="{{ url }}" class="pagination__link">{{ page }}</a>
+					</li>
+				{% endfor %}
+
+				{% if pageInfo.nextUrl %}
+					<li class="pagination__item">
+						<a href="{{ pageInfo.nextUrl }}" class="pagination__link link--next">
+							<svg width="5" height="8" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M4.398 3.594L.87.168a.467.467 0 00-.717 0 .592.592 0 00-.137.524L.71 4.004.016 7.316a.558.558 0 00.398.672.478.478 0 00.456-.137l3.528-3.415a.58.58 0 000-.785v-.057z"
+									fill="#fff"/>
+							</svg>
+						</a>
+					</li>
+				{% endif %}
+			</ul>
+		</nav>
+	{% endif %}
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+	{% block subcontent %}
+	{% endblock %}
+
+	{# -- Any JavaScript that should be included before </body> -- #}
+	{% block bodyJs %}
+		{{ parent() }}
+	{% endblock bodyJs %}

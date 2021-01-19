@@ -1,0 +1,13 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{# Matrix content #}
+{% block matrixContent %}
+<div class="section section-image">
+	<div class="grid grid-flow-col">
+		<div class="image-wrapper w-full">
+			{% include '_components/image-landscape.twig' with {'entity': matrix} %}
+		</div>
+	</div>
+</div>
+{% endblock %}

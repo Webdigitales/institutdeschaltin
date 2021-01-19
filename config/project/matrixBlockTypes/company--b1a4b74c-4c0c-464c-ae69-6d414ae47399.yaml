@@ -1,0 +1,203 @@
+field: 8703546e-3562-4167-9f69-f8ae81642962
+fieldLayouts:
+  36da5489-9fd9-4a63-8b57-f13d4d22269b:
+    tabs:
+      -
+        fields:
+          028aa12b-0b54-4bd9-9916-6383dc5135dd:
+            required: false
+            sortOrder: 4
+          0880362b-ef27-48fb-89d2-a2a24f001940:
+            required: false
+            sortOrder: 6
+          1e686489-8e62-4cb2-b085-046b7e126e81:
+            required: false
+            sortOrder: 5
+          46854de4-2342-4235-b78a-2f0b518ca03c:
+            required: false
+            sortOrder: 9
+          7256b8e9-2fde-496b-a5ba-c4bc3de31443:
+            required: false
+            sortOrder: 1
+          83d24248-9c65-4dd7-a3a3-091367587376:
+            required: false
+            sortOrder: 3
+          9dde5515-c419-4324-974f-d5619d6a1f90:
+            required: false
+            sortOrder: 2
+          ac3c288a-fb67-4339-a8c4-931d8f78eb2d:
+            required: false
+            sortOrder: 8
+          e0476c6d-ed19-42ee-9c7e-d210a4fa9463:
+            required: false
+            sortOrder: 7
+        name: Content
+        sortOrder: 1
+fields:
+  028aa12b-0b54-4bd9-9916-6383dc5135dd:
+    contentColumnType: string
+    fieldGroup: null
+    handle: companyMobile
+    instructions: ''
+    name: 'Téléphone mobile'
+    searchable: true
+    settings:
+      country: BE
+      customPatternErrorMessage: ''
+      customPatternToggle: null
+      inputMask: null
+      limitToSingleCountry: ''
+      mask: null
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: barrelstrength\sproutfields\fields\Phone
+  0880362b-ef27-48fb-89d2-a2a24f001940:
+    contentColumnType: string
+    fieldGroup: null
+    handle: companyFax
+    instructions: ''
+    name: FAX
+    searchable: true
+    settings:
+      country: BE
+      customPatternErrorMessage: ''
+      customPatternToggle: null
+      inputMask: null
+      limitToSingleCountry: ''
+      mask: null
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: barrelstrength\sproutfields\fields\Phone
+  1e686489-8e62-4cb2-b085-046b7e126e81:
+    contentColumnType: text
+    fieldGroup: null
+    handle: companyWhatsapp
+    instructions: ''
+    name: WhatsApp
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  46854de4-2342-4235-b78a-2f0b518ca03c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: companyVat
+    instructions: ''
+    name: 'Numéro de TVA'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7256b8e9-2fde-496b-a5ba-c4bc3de31443:
+    contentColumnType: text
+    fieldGroup: null
+    handle: companyName
+    instructions: ''
+    name: Nom
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  83d24248-9c65-4dd7-a3a3-091367587376:
+    contentColumnType: string
+    fieldGroup: null
+    handle: companyPhone
+    instructions: ''
+    name: 'Téléphone fixe'
+    searchable: true
+    settings:
+      country: BE
+      customPatternErrorMessage: ''
+      customPatternToggle: null
+      inputMask: null
+      limitToSingleCountry: ''
+      mask: null
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: barrelstrength\sproutfields\fields\Phone
+  9dde5515-c419-4324-974f-d5619d6a1f90:
+    contentColumnType: string
+    fieldGroup: null
+    handle: companyAddress
+    instructions: ''
+    name: Adresse
+    searchable: true
+    settings:
+      addressHelper: null
+      defaultCountry: BE
+      defaultLanguage: fr-BE
+      hideCountryDropdown: null
+      showCountryDropdown: '1'
+      value: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: barrelstrength\sproutfields\fields\Address
+  ac3c288a-fb67-4339-a8c4-931d8f78eb2d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: companyHours
+    instructions: ''
+    name: 'Heures d''ouverture'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\redactor\Field
+  e0476c6d-ed19-42ee-9c7e-d210a4fa9463:
+    contentColumnType: string
+    fieldGroup: null
+    handle: companyEmail
+    instructions: ''
+    name: 'Adresse email'
+    searchable: true
+    settings:
+      customPattern: ''
+      customPatternErrorMessage: ''
+      customPatternToggle: ''
+      placeholder: ''
+      uniqueEmail: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: barrelstrength\sproutfields\fields\Email
+handle: company
+name: Société
+sortOrder: 1

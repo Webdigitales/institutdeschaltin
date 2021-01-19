@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 2c6828c5-46bf-4ad6-b752-26413ff16eaa
+handle: socialMedia
+instructions: ''
+name: 'Réseaux sociaux'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_socialmedia}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

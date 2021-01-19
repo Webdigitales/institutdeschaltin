@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: jobsPost
+name: 'Jobs post'
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484:
+    enabledByDefault: true
+    hasUrls: true
+    template: channels/jobs-post
+    uriFormat: 'job/{slug}'
+type: channel

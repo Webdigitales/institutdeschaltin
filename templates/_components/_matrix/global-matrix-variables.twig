@@ -1,0 +1,17 @@
+{# -- Root global matrix variables that all templates inherit from -- #}
+{# -- This allows for defining site-wide Twig variables as needed -- #}
+{#
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │                                                                             │
+ │                                                                             │
+ │                                                                             │
+ │                                    Matrix                                   │
+ └─────────────────────────────────────────────────────────────────────────────┘
+#}
+
+{# -- Matrix variables -- #}
+{% set matrix = block %}
+
+{# -- Twig output from the render; this must be in a block -- #}
+{% block matrixContent %}
+{% endblock %}

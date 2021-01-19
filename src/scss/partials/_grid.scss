@@ -1,0 +1,82 @@
+/**
+ * Grid styles
+ *
+ * https://tailwindcss.com/docs/grid-template-columns
+ * https://tailwindcss.com/docs/grid-column
+ * https://tailwindcss.com/docs/grid-template-rows
+ * https://tailwindcss.com/docs/grid-row
+ * https://tailwindcss.com/docs/gap
+ * https://tailwindcss.com/docs/grid-auto-flow
+ */
+
+.grid {
+	@apply px-1;
+
+	@media (min-width: theme('screens.lg')) {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: theme('screens.md')) {
+		.col-span-1 + .col-span-1 {
+			@apply mt-2;
+		}
+	}
+
+	&--offset-1 {
+		@media (min-width: theme('screens.lg')) {
+			@apply px-4;
+		}
+	}
+
+	&--offset-2 {
+		@media (min-width: theme('screens.lg')) {
+			@apply px-5;
+		}
+	}
+
+	&--offset-l-1 {
+		@media (min-width: theme('screens.lg')) {
+			@apply pl-4;
+		}
+	}
+
+	&--col-2 {
+		@apply grid-flow-row;
+
+		@media (min-width: theme('screens.md')) {
+			@apply
+			grid-cols-2
+			gap-1;
+		}
+	}
+
+	&--col-3 {
+		@apply grid-flow-row;
+
+		@media (min-width: theme('screens.md')) {
+			@apply
+			grid-cols-3
+			gap-1;
+		}
+
+		@media (min-width: theme('screens.lg')) {
+			@apply gap-4;
+		}
+	}
+	
+	&--col-4 {
+		@apply grid-flow-row;
+
+		@media (min-width: theme('screens.md')) {
+			@apply
+			grid-cols-2
+			gap-1;
+		}
+
+		@media (min-width: theme('screens.lg')) {
+			@apply
+			grid-cols-4;
+		}
+	}
+}

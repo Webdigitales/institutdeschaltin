@@ -1,0 +1,150 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block headLinks %}
+	{{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	{% include "_layouts/_partials/banner--without-image.twig" %}
+	<div class="grid lg:grid-cols-3">
+		<div class="col-span-2 lg:mb-4">
+			<section class="section section-form" id="contact_form">
+				<div class="section__content">
+					{% include "_components/_forms/contact-form.twig" %}
+				</div>
+			</section>
+		</div>
+		<div class="col-span-2 lg:col-span-1 lg:pl-4 my-4 lg:my-0">
+			<aside class="sidebar">
+				{% set blocks = companyInfo.company.all() %}
+				{% if blocks|length %}
+					{% for block in blocks %}
+						<ul class="list list--vertical">
+							{% if block.companyName|length %}
+								<li class="list__item">
+									<span class="item__text">
+										<strong>{{ block.companyName }}</strong>
+									</span>
+								</li>
+							{% endif %}
+							{% if block.companyEmail|length %}
+								<li class="list__item">
+									<span class="item__icon">
+										<svg class="icon icon-email icon--gray" width="20" height="14" xmlns="http://www.w3.org/2000/svg"><path
+												d="M3.598 2l5.747 5.12a1 1 0 001.33 0L16.423 2H3.598zM18 3.273l-5.994 5.341a3 3 0 01-3.992 0L2 3.254V12h16V3.273zM2 0h16a2 2 0 012 2v10a2 2 0 01-2 2H2a2 2 0 01-2-2V2a2 2 0 012-2z"/></svg>
+									</span>
+									<span class="item__text">
+								<a href="mailto:{{ block.companyEmail }}" class="item__link">{{ block.companyEmail }}</a>
+							</span>
+								</li>
+							{% endif %}
+							{% if block.companyAddress|length %}
+								<li class="list__item items-start">
+									<span class="item__icon">
+										<svg class="icon icon-address icon--gray" width="14" height="20" xmlns="http://www.w3.org/2000/svg"><path
+												d="M12 7A5 5 0 102 7c0 1.726 1.66 5.031 5 9.653 3.34-4.622 5-7.927 5-9.653zM7 20C2.333 13.91 0 9.577 0 7a7 7 0 1114 0c0 2.577-2.333 6.91-7 13zm0-9a4 4 0 110-8 4 4 0 010 8zm0-2a2 2 0 100-4 2 2 0 000 4z"/></svg>
+									</span>
+									<span class="item__text">
+								{{ block.companyAddress|raw }}
+							</span>
+								</li>
+							{% endif %}
+							{% if block.companyPhone|length %}
+								<li class="list__item">
+									<span class="item__prefix">
+										T.&nbsp;:
+									</span>
+									<span class="item__text">
+										<a href="tel:{{ block.companyPhone.international }}"
+											 class="item__link">{{ block.companyPhone.international }}</a>
+									</span>
+								</li>
+							{% endif %}
+							{% if block.companyMobile|length %}
+								<li class="list__item">
+									<span class="item__prefix">
+										M.&nbsp;:
+									</span>
+									<span class="item__text">
+										<a href="tel:{{ block.companyMobile.international }}"
+											 class="item__link">{{ block.companyMobile.international }}</a>
+									</span>
+								</li>
+							{% endif %}
+							{% if block.companyFax|length %}
+								<li class="list__item">
+									<span class="item__prefix">
+										FAX&nbsp;:
+									</span>
+									<span class="item__text">
+										<a href="tel:{{ block.companyFax.international }}"
+											 class="item__link">{{ block.companyFax.international }}</a>
+									</span>
+								</li>
+							{% endif %}
+							{% if block.companyWhatsapp|length %}
+								<li class="list__item">
+									<span class="item__text">
+										<a href="https://wa.me/{{ block.companyWhatsapp }}" class="button button--green button--whatsapp button">
+											<svg class="button__icon icon icon-whatsapp" width="16" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M7.613.809c4.668-.221 8.507 3.544 8.361 8.164-.135 4.308-3.754 7.73-8.096 7.664a7.985 7.985 0 01-3.427-.826l-4.027.947a.31.31 0 01-.376-.362l.846-4.08a7.839 7.839 0 01-.868-3.573C.014 4.522 3.365 1.01 7.613.81zm.39 1.71a6.28 6.28 0 00-4.417 1.817A6.137 6.137 0 001.758 8.72c-.003.979.23 1.944.678 2.814l.277.537-.52 2.505 2.47-.58.56.277c.864.428 1.815.65 2.78.646a6.227 6.227 0 004.415-1.816 6.184 6.184 0 001.83-4.384 6.138 6.138 0 00-1.83-4.384A6.225 6.225 0 008.002 2.52zM5.397 4.902l.107.014c.177.04.325.161.399.326l.65 1.46a.568.568 0 01-.072.58l-.33.424a.555.555 0 00-.044.62c.393.679 1.93 2.036 2.66 2.33a.566.566 0 00.613-.129l.377-.382a.578.578 0 01.57-.149l1.546.44a.57.57 0 01.326.858c-.302.472-.782 1.05-1.382 1.195-1.056.255-2.681.006-4.71-1.873C4.355 8.989 3.89 7.634 4 6.56c.062-.61.574-1.16 1.005-1.522a.578.578 0 01.501-.122z" fill="#fff"/></svg>
+											<span class="button__text">{{ 'WhatsApp' }}</span>
+										</a>
+									</span>
+								</li>
+							{% endif %}
+							{% if block.companyHours|length %}
+								<li class="list__item list__item--vertical">
+										<strong class="heading">{{ 'Opening hours'|t }}</strong>
+										<div class="text">
+											{{ block.companyHours }}
+										</div>
+								</li>
+							{% endif %}
+						</ul>
+					{% endfor %}
+				{% endif %}
+				{% set socialLinks = companyInfo.socialMedia.all() %}
+				{% if blocks|length %}
+					<ul class="list list--horizontal list-social">
+						{% for link in socialLinks %}
+							<li class="list__item">
+								<a href="{{ link.urlSocialMedia }}" target="_blank" class="list__link">
+									{% if link.socialMedia == 'facebook' %}
+										<svg class="list__icon icon icon-{{ link.socialMedia }}" width="10" height="20"
+												 xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M2.014 3.865v2.748H0v3.36h2.014v9.986h4.134V9.974h2.775s.26-1.611.386-3.373H6.165V4.303c0-.343.45-.805.896-.805h2.254V0H6.251c-4.34 0-4.237 3.363-4.237 3.865z"/>
+										</svg>
+									{% endif %}
+									{% if link.socialMedia == 'instagram' %}
+										<svg class="list__icon icon icon-{{ link.socialMedia }}" width="16" height="16"
+												 xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.214 0a4.763 4.763 0 014.758 4.758v6.456a4.763 4.763 0 01-4.758 4.758H4.758A4.763 4.763 0 010 11.214V4.758A4.763 4.763 0 014.758 0zm0 1.606H4.758a3.152 3.152 0 00-3.152 3.152v6.456a3.153 3.153 0 003.152 3.152h6.456a3.152 3.152 0 003.152-3.152V4.758a3.153 3.153 0 00-3.152-3.152zm-3.228 2.25a4.137 4.137 0 014.132 4.13 4.136 4.136 0 01-4.132 4.13 4.136 4.136 0 01-4.13-4.13 4.136 4.136 0 014.13-4.13zm0 1.606a2.524 2.524 0 100 5.048 2.524 2.524 0 000-5.048zm4.139-2.565a.99.99 0 110 1.979.99.99 0 010-1.98z"/>
+										</svg>
+									{% endif %}
+									{% if link.socialMedia == 'linkedin' %}
+										<svg class="list__icon icon icon-{{ link.socialMedia }}" width="16" height="16"
+												 xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M15.967 9.375v5.903h-3.422V9.77c0-1.384-.495-2.328-1.734-2.328-.945 0-1.509.637-1.756 1.252-.09.22-.113.527-.113.835v5.75H5.518s.046-9.329 0-10.296h3.424v1.46l-.023.033h.023v-.034c.454-.7 1.266-1.7 3.084-1.7 2.252 0 3.941 1.472 3.941 4.633zM1.937.021C.767.02 0 .789 0 1.799c0 .988.744 1.78 1.892 1.78h.022c1.195 0 1.936-.792 1.936-1.78C3.83.79 3.11.021 1.938.021h-.001zM.203 15.278h3.423V4.983H.203v10.295z"/>
+										</svg>
+									{% endif %}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</aside>
+		</div>
+	</div>
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+	{{ parent() }}
+{% endblock bodyJs %}

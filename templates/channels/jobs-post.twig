@@ -1,0 +1,61 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block headJs %}
+	{{ parent() }}
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f7c2c506f87bb00127989fe&product=sop' async='async'></script>
+{% endblock headJs %}
+
+{% block content %}
+	<section class="section section-job job">
+		<div class="grid lg:grid-cols-3 gap-4">
+			<div class="col-span-1 lg:col-span-2">
+				<div class="job__topbar mb-4 flex items-center justify-between">
+					<div class="job__back-button">
+						<a href="{{ url('job') }}" class="button button--back button--with-icon">
+							<svg class="button__icon icon icon--left" width="5" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M.153 3.594L3.681.168a.467.467 0 01.718 0 .592.592 0 01.136.524l-.694 3.312.694 3.312a.558.558 0 01-.398.672.478.478 0 01-.456-.137L.153 4.436a.58.58 0 010-.785v-.057z"/></svg>
+							<span class="button__text">{{ 'Back to jobs'|t }}</span>
+						</a>
+					</div>
+					<div class="job__share-buttons sharethis-inline-share-buttons flex-auto ml-2"></div>
+				</div>
+				<div class="job__header">
+					{% include '_components/heading.twig' with {'headingLevel': '1', 'entity': entry} %}
+					<span class="job__keywords tag text-primary mb-4">
+					{% if entry.jobAddress.locality|length %}
+						{{ entry.jobAddress.locality|raw }}
+					{% endif %}
+						{% if entry.jobPeriod|length %}
+							/ {{ entry.jobPeriod }}
+						{% endif %}
+						{% if entry.jobContractType|length %}
+							/ {{ entry.jobContractType }}
+						{% endif %}
+					</span>
+				</div>
+				<div class="job__content text">
+					{{ entry.jobDescription }}
+				</div>
+			</div>
+			<div class="col-span-1 lg:col-span-1">
+				<section class="section section-form sticky z-40 mt-2 md:mt-0 w-full">
+					<div class="section__content">
+						{% include "_components/_forms/job-form.twig" %}
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

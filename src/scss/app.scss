@@ -1,0 +1,36 @@
+/**
+	Main app styles
+	Uses Tailwindcss: https://tailwindcss.com
+ */
+
+/*! purgecss start ignore */
+
+// Include Tailwindcss Base styles
+@import "~tailwindcss/base";
+
+@import 'partials/layout';
+
+// Include Tailwindcss Components styles
+@import "~tailwindcss/components";
+
+// Include plugins css
+@import "~swiper/swiper-bundle.css";
+@import "../js/vendor/meanMenu/meanmenu.css";
+
+// Include Theme Core styles
+@import 'partials/typography';
+@import 'partials/grid';
+@import 'partials/menu';
+@import 'partials/form';
+@import 'partials/button';
+@import 'partials/card';
+@import 'partials/section';
+@import 'partials/slider';
+
+// Include Theme overrides styles
+@import "overrides";
+
+// Include Tailwindcss Utilities styles
+@import "~tailwindcss/utilities";
+
+/*! purgecss end ignore */

@@ -1,0 +1,54 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{# Matrix content #}
+{% block matrixContent %}
+	<section class="section section-case section--multiple">
+		<div class="section__heading">
+			<div class="grid grid--offset-1 text-center">
+				<div class="col-span-1">
+					{% include '_components/tag.twig' with {'entity': matrix} %}
+					{% include '_components/heading.twig' with {'headingLevel': '2', 'entity': matrix} %}
+					{% include '_components/text.twig' with {'entity': matrix} %}
+				</div>
+			</div>
+		</div>
+		<div class="section__content">
+			<div class="slider">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						{% for case in matrix.CaseStudy.all() %}
+							<div class="swiper-slide">
+								<section class="slide__content case">
+									<div class="case__image">
+										<a href="{{ case.url }}">
+											{% include '_components/image-landscape.twig' with {'entity': case} %}
+										</a>
+									</div>
+									<div class="case__content card card--shadow card--grid">
+										<div class="icon-wrapper">
+											<svg class="icon icon--quote icon--primary" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M13 11.725C13 6.584 16.892 1.206 23 0l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746A5.213 5.213 0 0124 13.021C24 16.203 21.416 18 18.801 18 15.786 18 13 15.695 13 11.725zm-13 0C0 6.584 3.892 1.206 10 0l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746A5.213 5.213 0 0111 13.021C11 16.203 8.416 18 5.801 18 2.786 18 0 15.695 0 11.725z"/></svg>
+										</div>
+										{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': case} %}
+										<span class="tag case__client text-black">{{ case.client }}</span>
+										<span class="tag case__function text-grey">{{ case.clientSubtitle }}</span>
+										<a href="{{ case.url }}" class="link link--with-icon mt-2">
+											<span class="link__text">{{ 'See case study'|t }}</span>
+											<svg class="link__icon icon icon--right" width="5" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M4.398 3.594L.87.168a.467.467 0 00-.717 0 .592.592 0 00-.137.524L.71 4.004.016 7.316a.558.558 0 00.398.672.478.478 0 00.456-.137l3.528-3.415a.58.58 0 000-.785v-.057z"/></svg>
+										</a>
+									</div>
+								</section>
+							</div>
+						{% endfor %}
+					</div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

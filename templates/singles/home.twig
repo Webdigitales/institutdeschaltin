@@ -1,0 +1,44 @@
+{# -- Extends Generic layout template -- #}
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block headLinks %}
+	{{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	<section class="section section-banner{% if entry.image|length %} section--img{% endif %}">
+		<div class="section__heading">
+			<div class="grid grid--col-1 grid--offset-1 text-center">
+				<div class="col-span-2">
+					{# -- Include title template -- #}
+					{% include '_components/heading.twig' with {'headingLevel': '1', 'entity': entry} %}
+					{% include '_components/button.twig' with {'entity': entry} %}
+				</div>
+			</div>
+		</div>
+		{% if entry.videoBanner|length %}
+			<div class="section__video">
+				{% set relatedAssets = entry.videoBanner.one() %}
+				<video class="video" muted autoplay loop playsinline>
+					<source src="{{ relatedAssets.url }}" type="video/mp4">
+				</video>
+			</div>
+		{% endif %}
+		{% if entry.image|length %}
+			<div class="section__image">
+				{% include '_components/image-landscape.twig' with {'entity': entry} %}
+			</div>
+		{% endif %}
+	</section>
+	{% include "_components/_matrix/index.twig" %}
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+	{{ parent() }}
+	<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+{% endblock bodyJs %}

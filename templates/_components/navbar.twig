@@ -1,0 +1,29 @@
+{# -- Nav template -- #}
+
+{#
+	Set location value when AND navID value like :
+	{% include '_components/navbar.twig' with {'location': 'header', 'navID': 'mainNavigation'} %}
+#}
+
+
+<nav class="{{ location }}__nav nav">
+	{% set entries = craft.navigation.nodes(navID).all() %}
+	{% set slugs = craft.app.request.segments %}
+	<ul class="nav__list">
+		{% nav entry in entries %}
+			<li class="nav__item{% if entry.children|length %} dropdown{% endif %}{% if entry.classes | length %} {{ entry.classes }}{% endif %}{% if entry.slug in slugs %} is-active{% endif %}">
+				<a {% if entry.url %}href="{{ entry.url }}"{% endif %}
+					 class="nav__link dropdown__link{% if entry.active or entry.hasActiveChild %} is-active{% endif %}{% if entry.children|length %} dropdown__toggle{% endif %}"{% if entry.newWindow %}
+					 target="_blank"
+					 rel="noopener"{% endif %} {% for attribute in entry.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+				{{- entry.title -}}
+				</a>
+				{% ifchildren %}
+					<ul class="nav dropdown__item">
+						{% children %}
+					</ul>
+				{% endifchildren %}
+			</li>
+		{% endnav %}
+	</ul>
+</nav>

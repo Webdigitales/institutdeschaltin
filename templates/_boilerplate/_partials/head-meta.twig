@@ -1,0 +1,64 @@
+{# -- Basic meta tags -- #}
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{# SEO Start #}
+	{# Tip: You can pass the handle of your SEO field - getSeoField('mySeoFieldHandle') #}
+		{% set seo = getSeoField() %}
+		{% if seo is null or seo.title == '' %}
+			{% set seo = craft.seo.custom(siteName, '', false) %}
+		{% endif -%}
+		{% set locale = craft.app.locale %}
+		{% set locales = craft.app.i18n.siteLocaleIds|without(locale) %}
+<title>{% if homeTitle is defined %}{{ entry.homeTitle }} | PJS Institut de Schaltin{% elseif entry.title is defined %}{{ entry.title }} | PJS Institut de Schaltin{% else %}{{ title }} | PJS Institut de Schaltin{% endif %}</title>
+<meta name="description" content="{{ seo.description }}" />
+{% set fb = seo.social.facebook -%}
+<meta property="fb:app_id" content="{{ fb.handle }}">
+<meta property="og:url" content="{{ craft.app.request.absoluteUrl }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{% if homeTitle is defined %}{{ entry.homeTitle }} | PJS Institut de Schaltin{% elseif entry.title is defined %}{{ entry.title }} | PJS Institut de Schaltin{% else %}{{ title }} | PJS Institut de Schaltin{% endif %}" />
+<meta property="og:image" content="{{ craft.seo.facebookImage(fb.image) }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:description" content="{{ fb.description }}" />
+<meta property="og:site_name" content="{{ siteName }}" />
+<meta property="og:locale" content="{{ locale|replace('-', '_') }}" />
+{% for locale in locales -%}
+	<meta property="og:locale:alternate" content="{{ locale|replace('-', '_') }}" />
+{% endfor %}
+		{% set tw = seo.social.twitter -%}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{ tw.handle }}" />
+<meta name="twitter:url" content="{{ craft.app.request.absoluteUrl }}" />
+<meta name="twitter:title" content="{% if homeTitle is defined %}{{ entry.homeTitle }} | PJS Institut de Schaltin{% elseif entry.title is defined %}{{ entry.title }} | PJS Institut de Schaltin{% else %}{{ title }} | PJS Institut de Schaltin{% endif %}" />
+<meta name="twitter:description" content="{{ tw.description }}" />
+<meta name="twitter:image" content="{{ craft.seo.twitterImage(tw.image) }}" />
+{% if seo.robots -%}
+	<meta name="robots" content="{{ seo.robots }}" />
+{% endif %}
+		{%- if seo.expiry -%}
+			<meta name="robots" content="unavailable_after: {{ seo.expiry }}" />
+		{% endif %}
+<link rel="home" href="{{ siteUrl }}" />
+<link rel="canonical" href="{{ seo.canonical }}">
+{# SEO End #}
+
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+{# -- Prefetch & preconnect headers and links -- #}
+	{% set headerLink = "Link: " %}
+	{% for url in prefetchUrls %}
+		{% set headerLink = headerLink ~ "<#{url}>; rel=dns-prefetch;," %}
+		{% set headerLink = headerLink ~ "<#{url}>; rel=preconnect; crossorigin;" %}
+		{% if not loop.last %}
+			{% set headerLink = headerLink ~ "," %}
+		{% endif %}
+		<link rel="dns-prefetch" href="{{ url }}">
+		<link rel="preconnect" href="{{ url }}" crossorigin>
+	{% endfor %}
+	{% header headerLink %}

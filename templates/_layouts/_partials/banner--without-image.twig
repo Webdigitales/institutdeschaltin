@@ -1,0 +1,9 @@
+<section class="section banner banner--without-img">
+	<div class="grid grid--offset-2">
+		<div class="col-span-1 text-center">
+			{% include '_components/heading.twig' with {'headingLevel': '1', 'entity': entry} %}
+			{% include '_components/summary.twig' with {'entity': entry} %}
+			{% include '_components/button.twig' with {'entity': entry} %}
+		</div>
+	</div>
+</section>

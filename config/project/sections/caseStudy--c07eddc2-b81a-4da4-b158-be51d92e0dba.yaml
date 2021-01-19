@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: caseStudy
+name: Référence
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484:
+    enabledByDefault: true
+    hasUrls: true
+    template: structures/casestudy
+    uriFormat: 'reference/{slug}'
+structure:
+  maxLevels: null
+  uid: 3d9155d8-3818-43c1-94ba-f6eb1a288dc3
+type: structure

@@ -1,0 +1,40 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{# Matrix content #}
+{% block matrixContent %}
+	<div class="section section-gallery">
+		<div class="grid grid-flow-col">
+			<div class="slider">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						{% for img in matrix.gallery.all() %}
+							<div class="swiper-slide">
+								<div class="slide__content image-wrapper">
+									<div class="slide__image image">
+										{% set image = img.imageOptimizedLandscape %}
+										<picture class="picture">
+											<source data-srcset="{{ image.srcsetWebP() }}"
+															data-sizes="100vw"
+															type="image/webp" />
+											<img class="lazyload img"
+													 src="{{ image.placeholderBox() }}"
+													 data-srcset="{{ image.srcset() }}"
+													 data-sizes="100vw" />
+										</picture>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

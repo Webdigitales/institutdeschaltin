@@ -1,0 +1,26 @@
+enableVersioning: true
+handle: partner
+name: Partenaire
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Page entrée primaire'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484:
+    enabledByDefault: true
+    hasUrls: true
+    template: structures/partner
+    uriFormat: 'partenaire/{slug}'
+structure:
+  maxLevels: null
+  uid: c4e19ade-fb36-46cf-804e-7b011f8b8213
+type: structure

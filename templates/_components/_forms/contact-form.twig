@@ -1,0 +1,90 @@
+{% from '_macros/form-errors.twig' import errorList %}
+
+<div class="form-wrapper">
+	<h2 class="heading heading--2 mb-2 pl-1">{{ 'Send us a message'|t }}</h2>
+	<form class="form form--contact" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+		{{ csrfInput() }}
+		<input type="hidden" name="action" value="contact-form/send">
+		{{ redirectInput('confirmation-contact') }}
+
+		<div class="flex flex-wrap mb-1">
+			<div class="w-full md:w-1/2 px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="Firstname">
+					{{ 'First Name'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="Firstname" type="text" name="message[Firstname]" value="{{ message.message.Firstname ?? '' }}" required>
+				{{ message is defined and message ? errorList(message.getErrors('message.Firstname')) }}
+			</div>
+			<div class="w-full md:w-1/2 px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="Lastname">
+					{{ 'Last Name'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="Lastname" type="text" name="message[Lastname]" value="{{ message.message.Lastname ?? '' }}" required>
+				{{ message is defined and message ? errorList(message.getErrors('message.Lastname')) }}
+			</div>
+			<div class="w-full md:w-1/2 px-1 mb-1 md:mb-0">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="email">
+					{{ 'E-mail'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" required>
+				{{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+			</div>
+			<div class="w-full md:w-1/2 px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="Phone">
+					{{ 'Phone number'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="Phone" type="text" name="message[Phone]" value="{{ message.message.Phone ?? '' }}">
+				{{ message is defined and message ? errorList(message.getErrors('message.Phone')) }}
+			</div>
+			<div class="w-full px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="Address">
+					{{ 'Address'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="Address" type="text" name="message[Address]" value="{{ message.message.Address ?? '' }}">
+				{{ message is defined and message ? errorList(message.getErrors('message.Address')) }}
+			</div>
+			<div class="w-full md:w-1/3 px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="ZIP">
+					{{ 'ZIP'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="ZIP" type="text" name="message[ZIP]" value="{{ message.message.ZIP ?? '' }}">
+				{{ message is defined and message ? errorList(message.getErrors('message.ZIP')) }}
+			</div>
+			<div class="w-full md:w-1/3 px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="City">
+					{{ 'City'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="City" type="text" name="message[City]" value="{{ message.message.City ?? '' }}">
+				{{ message is defined and message ? errorList(message.getErrors('message.City')) }}
+			</div>
+			<div class="w-full md:w-1/3 px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="State">
+					{{ 'State'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="State" type="text" name="message[State]" value="{{ message.message.State ?? '' }}">
+				{{ message is defined and message ? errorList(message.getErrors('message.State')) }}
+			</div>
+			<div class="w-full px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="attachment">
+					{{ 'Attachment'|t }}
+				</label>
+				<input class="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="attachment" type="file" name="attachment[]" multiple>
+				{{ message is defined and message ? errorList(message.getErrors('attachment')) }}
+			</div>
+			<div class="w-full px-1">
+				<label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="message">
+					{{ 'Message'|t }}
+				</label>
+				<textarea rows="10" cols="40" lass="appearance-none block w-full mb-1 leading-tight focus:outline-none focus:bg-white" id="message" name="message[body]" required>{{ message.message.body ?? '' }}</textarea>
+				{{ message is defined and message ? errorList(message.getErrors('message.Body')) }}
+			</div>
+			<div class="w-full px-1 mt-2">
+				<input class="form__captcha" id="honeypotReCaptcha" name="honeypotReCaptcha" type="text">
+				<button type="submit" class="button button--primary items-center">{{ 'Send'|t }}</button>
+				{% if craft.app.session.hasFlash('error') %}
+					<p class="message error text-red-500 text-xs">{{ craft.app.session.getFlash('error') }}</p>
+				{% endif %}
+			</div>
+		</div>
+	</form>
+</div>

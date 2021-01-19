@@ -1,0 +1,41 @@
+fieldLayouts:
+  83cf2ed8-25c6-4107-b43d-7cb790011781:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: '{heading}'
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 97de7b47-515f-4d89-a189-4585140f7564
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Page header'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Call to action'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: SEO
+        sortOrder: 3
+handle: jobs
+hasTitleField: false
+name: Jobs
+section: f344c84e-a3c4-49e3-8038-660f592f9d47
+sortOrder: 1
+titleFormat: '{heading}'

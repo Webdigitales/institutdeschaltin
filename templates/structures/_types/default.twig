@@ -1,0 +1,19 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	{% include "_layouts/_partials/banner--with-image.twig" %}
+	{% include "_components/_matrix/index.twig" %}
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

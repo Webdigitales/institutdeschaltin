@@ -1,0 +1,28 @@
+# Uploaded files
+web/uploads
+
+# Misc files
+.DS_Store
+Thumbs.db
+*.sublime-workspace
+*.sublime-project
+*.vscode
+
+# Craft Environment Configs
+.env
+
+# Craft Environment Scripts
+.env.sh
+
+# Logs
+*.log
+
+# Dependency directories
+/node_modules
+/bower_components
+/vendor
+!src/js/vendor/
+
+# Locally compiled CSS/JS
+web/assets
+mix-manifest.json

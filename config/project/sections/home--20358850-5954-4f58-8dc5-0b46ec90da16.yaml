@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: home
+name: Accueil
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484:
+    enabledByDefault: true
+    hasUrls: true
+    template: singles/home
+    uriFormat: __home__
+type: single

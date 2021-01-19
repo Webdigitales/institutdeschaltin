@@ -1,0 +1,20 @@
+{# -- Image template -- #}
+
+{#
+	Set entity value when you include it like :
+	{% include '_components/image-small.twig' with {'entity': entry} %}
+#}
+
+{% set image = entity.imageSmall.one().imageOptimizedPortrait %}
+
+{% if entity.image|length %}
+	<picture class="picture picture--small">
+		<source data-srcset="{{ image.srcsetWebP() }}"
+						data-sizes="100vw"
+						type="image/webp" />
+		<img class="lazyload img img--small"
+				 src="{{ image.placeholderBox() }}"
+				 data-srcset="{{ image.srcset() }}"
+				 data-sizes="100vw" />
+	</picture>
+{% endif %}

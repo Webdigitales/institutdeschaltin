@@ -1,0 +1,38 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{# Matrix content #}
+{% block matrixContent %}
+	<section class="section section-service section--multiple">
+		<div class="section__heading">
+			<div class="grid grid--col-2 grid--offset-1">
+				<div class="col-span-1">
+					{% include '_components/tag.twig' with {'entity': matrix} %}
+					{% include '_components/heading.twig' with {'headingLevel': '2', 'entity': matrix} %}
+				</div>
+				<div class="col-span-1 flex items-end">
+					{% include '_components/text.twig' with {'entity': matrix} %}
+				</div>
+			</div>
+		</div>
+		<div class="section__content">
+			<div class="grid grid--col-3">
+				{% for service in matrix.service.all() %}
+					<div class="col-span-1">
+						<section class="card card-service card--shadow card--grid">
+							<a href="{{ service.url }}" class="card__link link--wrapper">
+								<div class="card__header">
+									{% include '_components/image-landscape.twig' with {'entity': service} %}
+								</div>
+								<div class="card__content">
+									{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': service} %}
+									{% include '_components/summary.twig' with {'entity': service} %}
+								</div>
+							</a>
+						</section>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

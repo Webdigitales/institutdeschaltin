@@ -1,0 +1,286 @@
+/**
+ * Section styles
+ */
+
+.section {
+	&--multiple {
+		.section__heading {
+			& + .section__content {
+				@apply mt-4;
+			}
+		}
+	}
+
+	&.banner {
+		@apply py-4;
+		position: relative;
+
+		&--with-img {
+			@media (min-width: theme('screens.lg')) {
+				padding: 0;
+				display: flex;
+				align-items: center;
+				width: 100%;
+				@apply pt-4;
+				margin-bottom: calc(2 * theme('spacing.4')) !important;
+
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 25%;
+					bottom: -10%;
+					left: 60%;
+					background-color: theme('colors.secondary.lighter');
+					z-index: -1;
+				}
+			}
+		}
+
+		&--without-img {
+			margin-bottom: 0;
+		}
+
+		&.bg--secondary-offset {
+			@media (min-width: theme('screens.lg')) {
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					left: 40%;
+					background-color: theme('colors.secondary.lighter');
+					z-index: -1;
+				}
+			}
+		}
+	}
+
+	&-column {
+		overflow: hidden;
+
+		.grid {
+			@apply bg-primary-lighter;
+			position: relative;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				width: 400%;
+				z-index: -1;
+
+				@apply bg-primary-lighter;
+			}
+		}
+
+		.section__heading {
+			.grid {
+				@apply pt-2;
+
+				@media (min-width: theme('screens.lg')) {
+					@apply pt-4;
+				}
+			}
+		}
+
+		.section__content {
+			margin: 0;
+
+			.grid {
+				@apply py-2;
+
+				@media (min-width: theme('screens.lg')) {
+					@apply py-4;
+				}
+			}
+		}
+	}
+
+	&-video {
+		.iframe-wrapper {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+
+			.iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	&-text-2images {
+		.section__picture {
+			position: relative;
+			padding-left: 5rem;
+
+			.picture--small {
+				position: absolute;
+				z-index: 2;
+				display: block;
+				overflow: hidden;
+				height: 350px;
+				width: 280px;
+				left: 0;
+				bottom: 2.5rem;
+
+				@media (max-width: theme('screens.lg')) {
+					height: 250px;
+					width: 180px;
+				}
+
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+
+	&-newsletter {
+		.section__content {
+			@apply bg-secondary-lighter
+			rounded
+			p-2;
+
+			@media (min-width: theme('screens.lg')) {
+				@apply p-4;
+			}
+		}
+
+		.input-group {
+			@media (max-width: theme('screens.sm')) {
+				flex-flow: row wrap;
+
+				button {
+					@apply mt-1 ml-0 w-full;
+
+					.button__text {
+						@apply block w-full text-center;
+					}
+				}
+			}
+		}
+
+		.heading {
+			@apply mb-2;
+		}
+
+		input {
+			@apply rounded-full;
+		}
+	}
+
+	&-jobs {
+		.col-span-1 {
+			& + .col-span-1 {
+				border-top: 1px solid theme('colors.gray.100');
+				margin-top: 0;
+			}
+		}
+	}
+
+	&-job {
+		@apply pt-4;
+	}
+
+	&-text {
+		p, .heading, .button-wrapper {
+			text-align: center;
+		}
+	}
+}
+
+.content {
+	> .section {
+		@apply mb-5;
+	}
+}
+
+.path-blogpost {
+	.section-text {
+		p, .heading, .button-wrapper {
+			text-align: left !important;
+		}
+	}
+
+	.news__share-buttons {
+		display: flex;
+		flex-flow: row wrap;
+		text-align: left !important;
+		flex: 0 1 auto;
+		@apply mt-2 ml-0;
+	}
+}
+
+.path-simple, .path-jobs, .path-contact, .path-devis, .path-blog, .path-cookies, .path-casestudies, .path-partners {
+	.banner {
+		margin-bottom: 0;
+	}
+}
+
+.path-service {
+	.section-column {
+		.grid {
+			@apply bg-white;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	@apply mb-5;
+
+	.pagination__item {
+		@apply mr-1;
+
+		&:last-child {
+			@apply mr-0;
+		}
+	}
+
+	&__link {
+		height: 48px;
+		width: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@apply rounded-full duration-300 text-black;
+
+		&.link--prev, &.link--next {
+			@apply bg-primary;
+
+			&:hover {
+				@apply bg-secondary;
+			}
+		}
+
+		&:hover, &.current {
+			@apply bg-primary-lighter;
+		}
+	}
+}
+
+.path-jobspost {
+	.job__form {
+		@apply shadow;
+	}
+}

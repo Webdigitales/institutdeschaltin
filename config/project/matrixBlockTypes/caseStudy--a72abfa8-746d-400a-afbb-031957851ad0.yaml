@@ -1,0 +1,127 @@
+field: 32712cfb-8a4d-4f62-ae43-0e6ed9c8714f
+fieldLayouts:
+  2f9fb387-e61b-4f86-8adf-079d7391195e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ba25bb94-dc4e-4999-bc89-8b4d4432c4ee
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b026272d-3176-4da6-9e08-78c68e0a33ef
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0f1b3b24-1062-47d4-ab5d-94d46eac7a14
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f2abb5e0-2c28-424c-934d-be969fc1ff58
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0f1b3b24-1062-47d4-ab5d-94d46eac7a14:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Texte
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  b026272d-3176-4da6-9e08-78c68e0a33ef:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  ba25bb94-dc4e-4999-bc89-8b4d4432c4ee:
+    contentColumnType: text
+    fieldGroup: null
+    handle: tag
+    instructions: ''
+    name: Tag
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  f2abb5e0-2c28-424c-934d-be969fc1ff58:
+    contentColumnType: string
+    fieldGroup: null
+    handle: CaseStudy
+    instructions: ''
+    name: Référence
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:c07eddc2-b81a-4da4-b158-be51d92e0dba'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: caseStudy
+name: 'Référence contenu - Références'
+sortOrder: 9

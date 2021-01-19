@@ -1,0 +1,15 @@
+<footer id="footer" class="site-footer footer">
+	<div class="grid text-xs">
+		<div class="col-span-1">
+			<div class="footer__bottom">
+				<div class="site-coryright coryright-wrapper">
+					<span class="coryright">&copy;&nbsp;{{ companyInfo.companyGlobalName }}</span>
+					<span class="site-vat">{{ companyInfo.companyGlobalVat }}</span>
+				</div>
+				<div class="mt-2 md:mt-0 nav-wrapper">
+					{% include '_components/navbar.twig' with {'location': 'footer', 'navID': 'footerLegalNav'} %}
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

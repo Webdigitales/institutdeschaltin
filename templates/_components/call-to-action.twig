@@ -1,0 +1,24 @@
+{# -- Call to action template -- #}
+
+{#
+	Set entity value when you include it like :
+	{% include '_components/call-to-action.twig' with {'entity': entry} %}
+#}
+
+{% if entity.cta|length %}
+	{% for item in entry.cta.all() %}
+		{% if item.tag|length or item.heading|length %}
+			<section class="section section-cta">
+				<div class="grid">
+					<div class="col-span-1">
+						<div class="section_content bg-secondary-lighter text-center p-2 lg:p-4 rounded">
+							{% include '_components/tag.twig' with {'entity': item} %}
+							{% include '_components/heading.twig' with {'entity': item, 'headingLevel': '2'} %}
+							{% include '_components/button.twig' with {'entity': item} %}
+						</div>
+					</div>
+				</div>
+			</section>
+		{% endif %}
+	{% endfor %}
+{% endif %}

@@ -1,0 +1,14 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{# Matrix content #}
+{% block matrixContent %}
+	<section class="section section-text">
+		<div class="grid grid--offset-2">
+			<div class="col-span-1">
+				{% include '_components/heading.twig' with {'headingLevel': '2', 'entity': matrix} %}
+				{% include '_components/text.twig' with {'entity': matrix} %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

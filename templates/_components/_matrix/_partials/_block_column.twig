@@ -1,0 +1,36 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{# Matrix content #}
+{% block matrixContent %}
+	<section class="section section-column">
+		<div class="section__heading">
+			<div class="grid grid--col-2 grid--offset-l-1">
+				<div class="col-span-1">
+					{# -- Include title template -- #}
+					{% include '_components/tag.twig' with {'entity': matrix} %}
+					{# -- Include title template -- #}
+					{% include '_components/heading.twig' with {'headingLevel': '2', 'entity': matrix} %}
+				</div>
+			</div>
+		</div>
+		<div class="section__content">
+			<div class="grid grid--col-4 grid--offset-l-1">
+				{% for col in matrix.column.all() %}
+					<div class="col-span-1">
+						<section class="card card--grid">
+							<div class="card__header">
+								{% include '_components/image-landscape.twig' with {'entity': col} %}
+							</div>
+							<div class="card__content">
+								{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': col} %}
+								{% include '_components/text.twig' with {'entity': col} %}
+								{% include '_components/button.twig' with {'entity': col} %}
+							</div>
+						</section>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,88 @@
+{# Admin bar plugin #}
+{{ adminbar() }}
+
+{# Site header #}
+{% set companyCTA = craft.app.globals.getSetByHandle('siteCTA') %}
+{% if companyCTA|length %}
+	{% if companyCTA.cta.one().heading|length %}
+		<div class="site-flashnews flashnews">
+			{% if companyCTA.cta.one().button.url|length %}
+			<a href="{{ companyCTA.cta.one().button.url }}" class="flashnews__link link--wrapper">
+				{% endif %}
+				<div class="flashnews__content">
+					{% include '_components/tag.twig' with {'entity': companyCTA.cta.one()} %}
+					<p class="flashnews__message">{{ companyCTA.cta.one().heading }}</p>
+				</div>
+				{% if companyCTA.cta.one().button.url|length %}
+			</a>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endif %}
+{% if companyInfo.companyGlobalPhone|length %}
+	<div class="header__phone lg:invisible">
+		<a href="tel:{{ companyInfo.companyGlobalPhone.international }}"
+			 class="link link-phone">
+			<svg class="link__icon icon icon-phone" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M2.274 2.234a3.76 3.76 0 015.39 0l.789.8a3.89 3.89 0 01.462 4.91l-1.333 1.96a.516.516 0 00.054.69l5.661 5.765a.567.567 0 00.68.055c.518-.359 1.253-.855 1.933-1.352 1.497-1.076 3.539-.883 4.845.441l.79.773c.707.745 1.116 1.71 1.116 2.73a3.915 3.915 0 01-1.116 2.732l-1.143 1.159c-.735.744-1.77 1.103-2.995 1.103-3.102 0-7.403-2.262-11.268-6.18C.749 12.36-1.455 6.015 1.131 3.394zm2.695-.027c-.708 0-1.416.248-1.933.8L1.893 4.166C-.176 6.29 2.11 12.193 6.9 17.048c4.818 4.855 10.615 7.2 12.711 5.076l1.143-1.158c.518-.525.79-1.214.762-1.96a2.75 2.75 0 00-.789-1.958l-.762-.772a2.695 2.695 0 00-3.457-.331c-.707.496-1.415.993-1.932 1.352a1.628 1.628 0 01-2.069-.194l-5.661-5.737a1.683 1.683 0 01-.19-2.097L7.99 7.31c.735-1.076.599-2.565-.327-3.503l-.762-.8a2.769 2.769 0 00-1.932-.8zm8.138 4.414c2.096 0 3.81 1.738 3.81 3.862a.55.55 0 01-.544.551.55.55 0 01-.544-.551c0-1.517-1.225-2.759-2.722-2.759a.55.55 0 01-.544-.552.55.55 0 01.544-.551zm0-3.31c3.892 0 7.077 3.227 7.077 7.172a.55.55 0 01-.545.551.55.55 0 01-.544-.551c0-3.338-2.695-6.07-5.988-6.07a.55.55 0 01-.544-.55.55.55 0 01.544-.553zm0-3.311C18.823 0 23.45 4.69 23.45 10.483a.55.55 0 01-.544.551.55.55 0 01-.545-.551c0-5.159-4.164-9.38-9.254-9.38a.55.55 0 01-.544-.551.55.55 0 01.544-.552z"/>
+			</svg>
+		</a>
+	</div>
+{% endif %}
+<div class="header__social lg:invisible">
+	{% set blocks = companyInfo.company.all() %}
+	{% set socialLinks = companyInfo.socialMedia.all() %}
+	{% if blocks|length %}
+		<ul class="list list--horizontal list-social">
+			{% for link in socialLinks %}
+				<li class="list__item">
+					<a href="{{ link.urlSocialMedia }}" target="_blank" class="list__link">
+						{% if link.socialMedia == 'facebook' %}
+							<svg class="list__icon icon icon-{{ link.socialMedia }}" width="10" height="20"
+									 xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.014 3.865v2.748H0v3.36h2.014v9.986h4.134V9.974h2.775s.26-1.611.386-3.373H6.165V4.303c0-.343.45-.805.896-.805h2.254V0H6.251c-4.34 0-4.237 3.363-4.237 3.865z"/>
+							</svg>
+						{% endif %}
+						{% if link.socialMedia == 'instagram' %}
+							<svg class="list__icon icon icon-{{ link.socialMedia }}" width="16" height="16"
+									 xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.214 0a4.763 4.763 0 014.758 4.758v6.456a4.763 4.763 0 01-4.758 4.758H4.758A4.763 4.763 0 010 11.214V4.758A4.763 4.763 0 014.758 0zm0 1.606H4.758a3.152 3.152 0 00-3.152 3.152v6.456a3.153 3.153 0 003.152 3.152h6.456a3.152 3.152 0 003.152-3.152V4.758a3.153 3.153 0 00-3.152-3.152zm-3.228 2.25a4.137 4.137 0 014.132 4.13 4.136 4.136 0 01-4.132 4.13 4.136 4.136 0 01-4.13-4.13 4.136 4.136 0 014.13-4.13zm0 1.606a2.524 2.524 0 100 5.048 2.524 2.524 0 000-5.048zm4.139-2.565a.99.99 0 110 1.979.99.99 0 010-1.98z"/>
+							</svg>
+						{% endif %}
+						{% if link.socialMedia == 'linkedin' %}
+							<svg class="list__icon icon icon-{{ link.socialMedia }}" width="16" height="16"
+									 xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15.967 9.375v5.903h-3.422V9.77c0-1.384-.495-2.328-1.734-2.328-.945 0-1.509.637-1.756 1.252-.09.22-.113.527-.113.835v5.75H5.518s.046-9.329 0-10.296h3.424v1.46l-.023.033h.023v-.034c.454-.7 1.266-1.7 3.084-1.7 2.252 0 3.941 1.472 3.941 4.633zM1.937.021C.767.02 0 .789 0 1.799c0 .988.744 1.78 1.892 1.78h.022c1.195 0 1.936-.792 1.936-1.78C3.83.79 3.11.021 1.938.021h-.001zM.203 15.278h3.423V4.983H.203v10.295z"/>
+							</svg>
+						{% endif %}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</div>
+<header id="header" class="site-header header">
+	<div class="logo-wrapper header__item">
+		{# Edit logo here #}
+		<a href="{{ siteUrl }}" title='back to homepage' class="logo__link">
+			{% if craft.rebrand.isLogoUploaded %}
+				<img width="{{ craft.rebrand.getLogo().size[0] }}" class="header__logo logo"
+						 height="{{ craft.rebrand.getLogo().size[1] }}" src="{{ craft.rebrand.getLogo().url }}">
+			{% endif %}
+		</a>
+		{# ! Edit logo here END #}
+	</div>
+	<div class="header__item">
+		{% include '_components/navbar.twig' with {'location': 'header', 'navID': 'mainNavigation'} %}
+	</div>
+	<div class="header__cta header__item">
+		<div class="header__lang">
+			{% include '_components/lang-switcher.twig' %}
+		</div>
+		{% include '_components/button.twig' with {'entity': siteCTA} %}
+	</div>
+</header>

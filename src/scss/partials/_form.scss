@@ -1,0 +1,49 @@
+/**
+ * Form styles
+ */
+
+input, textarea, select {
+	@apply
+	bg-white
+	border-1
+	border-gray-100
+	px-1
+	py-0.5
+	rounded
+	h-3
+	text-black;
+
+	display: inline-flex;
+	align-items: center;
+
+	&:focus {
+		outline: 0;
+		border-color: theme('colors.secondary.default');
+	}
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+
+	input {
+		width: 100%;
+	}
+
+	input + .button {
+		@apply ml-1;
+	}
+}
+
+textarea {
+	max-height: 300px;
+	width: 100%;
+	min-height: 150px;
+	max-width: 100%;
+}
+
+.form {
+	.form__captcha {
+		display: none;
+	}
+}

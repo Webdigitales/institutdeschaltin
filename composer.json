@@ -1,0 +1,70 @@
+{
+	"name": "jmcgaha/craft-boilerplate",
+	"description": "Craft CMS",
+	"keywords": [
+		"craft",
+		"cms",
+		"craftcms",
+		"project"
+	],
+	"license": "MIT",
+	"homepage": "https://craftcms.com/",
+	"type": "project",
+	"support": {
+		"email": "support@craftcms.com",
+		"issues": "https://github.com/craftcms/cms/issues",
+		"forum": "https://craftcms.stackexchange.com/",
+		"source": "https://github.com/craftcms/cms",
+		"docs": "https://craftcms.com/docs",
+		"rss": "https://craftcms.com/changelog.rss"
+	},
+	"require": {
+		"barrelstrength/sprout-fields": "3.8.4",
+		"clubstudioltd/craft-asset-rev": "^6.0",
+		"craftcms/cms": "3.5.14",
+		"craftcms/contact-form": "2.2.7",
+		"craftcms/contact-form-honeypot": "1.0.2",
+		"craftcms/redactor": "2.8.3",
+		"ether/seo": "3.6.6",
+		"la-haute-societe/craft-google-tag-manager": "1.1.0",
+		"mikestecker/craft-videoembedder": "^1.1",
+		"nystudio107/craft-imageoptimize": "1.6.19",
+		"nystudio107/craft-minify": "^1.2",
+		"nystudio107/craft-templatecomments": "^1.1.2",
+		"sebastianlenz/linkfield": "1.0.23",
+		"topshelfcraft/environment-label": "^3.2.0",
+		"verbb/navigation": "1.4.1",
+		"verbb/super-table": "2.6.3",
+		"vlucas/phpdotenv": "^3.6.6",
+		"wbrowar/adminbar": "3.1.8.1"
+	},
+	"autoload": {
+		"psr-4": {}
+	},
+	"config": {
+		"sort-packages": true,
+		"optimize-autoloader": true,
+		"platform": {
+			"php": "7.4.0"
+		}
+	},
+	"scripts": {
+		"post-create-project-cmd": [
+			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+			"@php -r \"file_exists('scripts/.env.sh') || copy('scripts/example.env.sh', 'scripts/.env.sh');\"",
+			"@php craft setup/welcome"
+		],
+		"post-update-cmd": [
+			"@php craft migrate/all",
+			"@php craft project-config/apply",
+			"@php craft clear-caches/all"
+		],
+		"post-install-cmd": [
+			"@php craft migrate/all",
+			"@php craft project-config/apply",
+			"@php craft clear-caches/all"
+		]
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

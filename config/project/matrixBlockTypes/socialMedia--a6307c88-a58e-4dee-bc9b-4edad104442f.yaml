@@ -1,0 +1,110 @@
+field: 236cfc78-b35d-4463-ba24-92e44d63c5fd
+fieldLayouts:
+  cb485790-9f67-40a2-a059-a940dae97abb:
+    tabs:
+      -
+        fields:
+          962fc6c0-58a3-4c36-bac1-687ba146103a:
+            required: true
+            sortOrder: 1
+          ece043f2-cbc9-4827-9848-4598ea213214:
+            required: true
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  962fc6c0-58a3-4c36-bac1-687ba146103a:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: urlSocialMedia
+    instructions: ''
+    name: Url
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  ece043f2-cbc9-4827-9848-4598ea213214:
+    contentColumnType: string
+    fieldGroup: null
+    handle: socialMedia
+    instructions: ''
+    name: 'Réseau social'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Facebook
+            -
+              - value
+              - facebook
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Instagram
+            -
+              - value
+              - instagram
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Twitter
+            -
+              - value
+              - twitter
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Youtube
+            -
+              - value
+              - youtube
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Vimeo
+            -
+              - value
+              - vimeo
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - linkdedIn
+            -
+              - value
+              - linkedin
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: socialMedia
+name: 'Réseau social'
+sortOrder: 1

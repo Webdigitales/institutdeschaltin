@@ -1,0 +1,33 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set posts = craft.entries()
+	.section('blogPost')
+	.orderBy('dateCreated desc')
+	.limit(6)
+%}
+
+{% paginate posts as pageInfo, pageEntries %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	{% include "_layouts/_partials/banner--without-image.twig" %}
+	<section id="cookies" class="section section-cookies">
+		<div class="grid grid--offset-1">
+			<div class="col-span-1">
+				<script id="CookieDeclaration" data-culture="{{ craft.app.locale|slice(0,2)|upper }}" src="https://consent.cookiebot.com/f7ced301-19a5-4488-a79e-7f08e4b391f3/cd.js" type="text/javascript" async></script>
+			</div>
+		</div>
+	</section>
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

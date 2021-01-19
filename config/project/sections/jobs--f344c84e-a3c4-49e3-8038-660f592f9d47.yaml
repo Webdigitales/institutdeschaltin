@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: jobs
+name: Jobs
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484:
+    enabledByDefault: true
+    hasUrls: true
+    template: singles/jobs
+    uriFormat: job
+type: single

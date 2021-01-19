@@ -1,0 +1,21 @@
+fieldLayouts:
+  72454ad4-86fc-43b2-8479-6e529c06e321:
+    tabs:
+      -
+        fields:
+          93304c19-bbb1-4d94-ba14-608a857a4244:
+            required: false
+            sortOrder: 2
+          c708f287-50a8-433a-8550-24acbb26de80:
+            required: false
+            sortOrder: 1
+        name: 'Tab 1'
+        sortOrder: 1
+handle: imageOptimized
+hasUrls: true
+name: 'Image Optimized'
+settings:
+  path: '@imagePath'
+sortOrder: 3
+type: craft\volumes\Local
+url: '@imageUrl'

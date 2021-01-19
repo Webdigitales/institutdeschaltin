@@ -1,0 +1,17 @@
+{# Extends matrix variables #}
+{% extends '_components/_matrix/global-matrix-variables.twig' %}
+
+{% set embed = craft.videoEmbedder.getEmbedUrl(block.video) %}
+
+{# Matrix content #}
+{% block matrixContent %}
+	{% if embed | length %}
+		<div class="section section-video">
+			<div class="grid grid-flow-col">
+				<div class="iframe-wrapper w-full">
+					<iframe class="iframe w-full" src="{{ embed }}"></iframe>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+{% endblock %}

@@ -1,0 +1,9 @@
+format: jpg
+handle: squareCrop
+height: 200
+interlace: none
+mode: fit
+name: 'Crop carré'
+position: center-center
+quality: 82
+width: 200

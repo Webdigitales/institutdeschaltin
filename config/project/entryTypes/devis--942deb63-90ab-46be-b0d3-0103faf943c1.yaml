@@ -1,0 +1,33 @@
+fieldLayouts:
+  b39b0f14-99f8-432d-8be3-f355a38f9bdc:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 97de7b47-515f-4d89-a189-4585140f7564
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Page header'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: SEO
+        sortOrder: 2
+handle: devis
+hasTitleField: false
+name: Devis
+section: 4c41527f-d1e5-4351-9536-7acfbe62669f
+sortOrder: 1
+titleFormat: '{heading}'

@@ -25,11 +25,13 @@ fields:
     searchable: true
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
       defaultUploadLocationSubpath: ''
       limit: ''
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
       showSiteMenu: true

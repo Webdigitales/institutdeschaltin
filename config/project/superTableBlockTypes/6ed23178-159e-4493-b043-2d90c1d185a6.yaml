@@ -52,11 +52,13 @@ fields:
     searchable: true
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
       showSiteMenu: true
@@ -91,7 +93,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   91f341c6-6785-4efb-9e1e-a369bb49c3e6:
     contentColumnType: text
@@ -119,7 +121,7 @@ fields:
       showUnpermittedVolumes: false
       uiMode: enlarged
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\redactor\Field
   d4b19b79-cd6e-4287-8892-98d372166baa:
     contentColumnType: text
@@ -231,5 +233,5 @@ fields:
                   - allowAliases
                   - ''
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: typedlinkfield\fields\LinkField

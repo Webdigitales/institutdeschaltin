@@ -1,4 +1,4 @@
-dateModified: 1611070471
+dateModified: 1623423562
 email:
   fromEmail: i.de.schaltin@skynet.be
   fromName: 'Institut de Schaltin'
@@ -137,6 +137,10 @@ plugins:
     enabled: true
     licenseKey: GM5K1QPEHX6MW6IJJXAR9SCL
     schemaVersion: 1.0.21
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
   redactor:
     edition: standard
     enabled: true
@@ -205,7 +209,7 @@ plugins:
     schemaVersion: 1.0.0
   video-embedder:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 1.0.0
 system:
   edition: pro

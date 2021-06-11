@@ -162,7 +162,7 @@ fields:
                   - allowAliases
                   - ''
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: typedlinkfield\fields\LinkField
   7703f25a-9c9c-4239-bfc8-a96f4b6d2b00:
     contentColumnType: string
@@ -173,11 +173,13 @@ fields:
     searchable: true
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
       showSiteMenu: true
@@ -204,11 +206,13 @@ fields:
     searchable: true
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:1bc7b595-8601-44b4-b427-0e927919a810'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
       showSiteMenu: true
@@ -252,7 +256,7 @@ fields:
       showUnpermittedVolumes: false
       uiMode: enlarged
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\redactor\Field
   8bbc4f42-2e96-480d-ba66-f4182e1f59e5:
     contentColumnType: text
@@ -271,7 +275,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
 handle: text2Images
 name: 'Texte + 2 images'

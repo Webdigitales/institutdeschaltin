@@ -60,7 +60,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   15750c95-7ec5-4eb1-aab2-c091e131c139:
     contentColumnType: text
@@ -88,7 +88,7 @@ fields:
       showUnpermittedVolumes: false
       uiMode: enlarged
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\redactor\Field
   86eed792-532e-48ea-bff9-b2b4f14be1ae:
     contentColumnType: string
@@ -129,7 +129,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
 handle: service
 name: 'Référence contenu - Services'

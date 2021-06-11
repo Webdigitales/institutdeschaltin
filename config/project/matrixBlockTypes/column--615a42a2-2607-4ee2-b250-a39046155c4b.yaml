@@ -51,7 +51,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   41dc0c40-425c-4459-beda-9c1a12cac627:
     contentColumnType: string
@@ -91,7 +91,7 @@ fields:
                 -
                   - width
                   - ''
-      contentTable: '{{%stc_10_column}}'
+      contentTable: '{{%stc_11_column}}'
       fieldLayout: matrix
       maxRows: ''
       minRows: ''
@@ -119,7 +119,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
 handle: column
 name: Colonnes

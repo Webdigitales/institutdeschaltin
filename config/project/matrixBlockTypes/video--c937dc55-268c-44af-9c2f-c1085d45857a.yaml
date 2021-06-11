@@ -19,13 +19,15 @@ fields:
   5660be1a-d117-4f7a-b667-8b2e0fba12b4:
     contentColumnType: text
     fieldGroup: null
-    handle: video
+    handle: oembed
     instructions: ''
     name: Vidéo
     searchable: true
+    settings:
+      url: ''
     translationKeyFormat: null
     translationMethod: none
-    type: mikestecker\videoembedder\fields\Video
+    type: wrav\oembed\fields\OembedField
 handle: video
 name: Vidéo
 sortOrder: 6

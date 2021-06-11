@@ -60,7 +60,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   b026272d-3176-4da6-9e08-78c68e0a33ef:
     contentColumnType: text
@@ -79,7 +79,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   ba25bb94-dc4e-4999-bc89-8b4d4432c4ee:
     contentColumnType: text
@@ -98,7 +98,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   f2abb5e0-2c28-424c-934d-be969fc1ff58:
     contentColumnType: string

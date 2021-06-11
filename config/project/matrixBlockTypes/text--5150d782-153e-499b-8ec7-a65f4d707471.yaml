@@ -42,7 +42,7 @@ fields:
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   b3fc3d3c-31c1-4d66-a8f5-53cf40a18112:
     contentColumnType: text
@@ -70,7 +70,7 @@ fields:
       showUnpermittedVolumes: false
       uiMode: enlarged
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\redactor\Field
 handle: text
 name: Texte

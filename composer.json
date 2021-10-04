@@ -21,7 +21,7 @@
 	"require": {
 		"barrelstrength/sprout-fields": "3.8.4",
 		"clubstudioltd/craft-asset-rev": "^6.0",
-		"craftcms/cms": "3.5.14",
+		"craftcms/cms": "3.7.14",
 		"craftcms/contact-form": "2.2.7",
 		"craftcms/contact-form-honeypot": "1.0.2",
 		"craftcms/redactor": "2.8.3",

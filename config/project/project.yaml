@@ -1,16 +1,12 @@
-dateModified: 1623423562
+dateModified: 1724154487
 email:
-  fromEmail: i.de.schaltin@skynet.be
+  fromEmail: info@institutdeschaltin.be
   fromName: 'Institut de Schaltin'
-  replyToEmail: null
+  replyToEmail: no-reply@institutdeschaltin.be
   template: ''
   transportSettings:
     command: '/usr/sbin/sendmail -t'
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 plugins:
   admin-bar:
     edition: standard
@@ -58,7 +54,7 @@ plugins:
       prependSender: 'Institut de Schaltin'
       prependSubject: 'Nouveau message sur votre site internet'
       successFlashMessage: 'Votre message a été envoyé.'
-      toEmail: i.de.schaltin@skynet.be
+      toEmail: formulaire_web@institutdeschaltin.be
   contact-form-honeypot:
     edition: standard
     enabled: true

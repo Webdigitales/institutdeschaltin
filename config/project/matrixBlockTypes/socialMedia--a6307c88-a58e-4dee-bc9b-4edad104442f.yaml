@@ -3,13 +3,25 @@ fieldLayouts:
   cb485790-9f67-40a2-a059-a940dae97abb:
     tabs:
       -
-        fields:
-          962fc6c0-58a3-4c36-bac1-687ba146103a:
+        elements:
+          -
+            fieldUid: 962fc6c0-58a3-4c36-bac1-687ba146103a
+            instructions: null
+            label: null
             required: true
-            sortOrder: 1
-          ece043f2-cbc9-4827-9848-4598ea213214:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ece043f2-cbc9-4827-9848-4598ea213214
+            instructions: null
+            label: null
             required: true
-            sortOrder: 2
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:

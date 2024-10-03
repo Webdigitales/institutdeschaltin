@@ -3,34 +3,88 @@ fieldLayouts:
   36da5489-9fd9-4a63-8b57-f13d4d22269b:
     tabs:
       -
-        fields:
-          028aa12b-0b54-4bd9-9916-6383dc5135dd:
+        elements:
+          -
+            fieldUid: 7256b8e9-2fde-496b-a5ba-c4bc3de31443
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
-          0880362b-ef27-48fb-89d2-a2a24f001940:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9dde5515-c419-4324-974f-d5619d6a1f90
+            instructions: null
+            label: null
             required: false
-            sortOrder: 6
-          1e686489-8e62-4cb2-b085-046b7e126e81:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 83d24248-9c65-4dd7-a3a3-091367587376
+            instructions: null
+            label: null
             required: false
-            sortOrder: 5
-          46854de4-2342-4235-b78a-2f0b518ca03c:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 028aa12b-0b54-4bd9-9916-6383dc5135dd
+            instructions: null
+            label: null
             required: false
-            sortOrder: 9
-          7256b8e9-2fde-496b-a5ba-c4bc3de31443:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1e686489-8e62-4cb2-b085-046b7e126e81
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          83d24248-9c65-4dd7-a3a3-091367587376:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0880362b-ef27-48fb-89d2-a2a24f001940
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          9dde5515-c419-4324-974f-d5619d6a1f90:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e0476c6d-ed19-42ee-9c7e-d210a4fa9463
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          ac3c288a-fb67-4339-a8c4-931d8f78eb2d:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ac3c288a-fb67-4339-a8c4-931d8f78eb2d
+            instructions: null
+            label: null
             required: false
-            sortOrder: 8
-          e0476c6d-ed19-42ee-9c7e-d210a4fa9463:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 46854de4-2342-4235-b78a-2f0b518ca03c
+            instructions: null
+            label: null
             required: false
-            sortOrder: 7
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -85,6 +139,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -103,6 +158,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -121,6 +177,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -171,14 +228,19 @@ fields:
       availableVolumes: ''
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: language
     type: craft\redactor\Field

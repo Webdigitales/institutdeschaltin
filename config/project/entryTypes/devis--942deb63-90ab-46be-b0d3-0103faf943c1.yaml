@@ -4,25 +4,59 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
             label: Titre
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 97de7b47-515f-4d89-a189-4585140f7564
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Page header'
         sortOrder: 1
       -
         elements:
           -
             fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: SEO
         sortOrder: 2
 handle: devis
@@ -31,3 +65,5 @@ name: Devis
 section: 4c41527f-d1e5-4351-9536-7acfbe62669f
 sortOrder: 1
 titleFormat: '{heading}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

@@ -2,26 +2,56 @@ fieldLayouts:
   444ac587-370d-4ba5-abd4-ba0a56b923e9:
     tabs:
       -
-        fields:
-          314970cb-0933-4fbe-bc95-5dda6e8752e3:
+        elements:
+          -
+            fieldUid: 5560a7fb-c916-433d-a513-68656682ad15
+            instructions: null
+            label: null
             required: true
-            sortOrder: 3
-          4a6b3f56-c796-4e8a-b5c9-0372934e6dd3:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4a6b3f56-c796-4e8a-b5c9-0372934e6dd3
+            instructions: null
+            label: null
             required: true
-            sortOrder: 2
-          5560a7fb-c916-433d-a513-68656682ad15:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 314970cb-0933-4fbe-bc95-5dda6e8752e3
+            instructions: null
+            label: null
             required: true
-            sortOrder: 1
-          8703546e-3562-4167-9f69-f8ae81642962:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8703546e-3562-4167-9f69-f8ae81642962
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Infos de contact'
         sortOrder: 1
       -
-        fields:
-          236cfc78-b35d-4463-ba24-92e44d63c5fd:
+        elements:
+          -
+            fieldUid: 236cfc78-b35d-4463-ba24-92e44d63c5fd
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Réseaux sociaux'
         sortOrder: 2
 handle: companyInfo

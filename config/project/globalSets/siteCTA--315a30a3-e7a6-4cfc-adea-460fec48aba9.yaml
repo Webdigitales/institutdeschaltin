@@ -2,17 +2,29 @@ fieldLayouts:
   ea278d70-c03b-47e3-817a-8b4dfabfad8f:
     tabs:
       -
-        fields:
-          646a52cb-addd-4be0-873e-12fb37829ca0:
+        elements:
+          -
+            fieldUid: 646a52cb-addd-4be0-873e-12fb37829ca0
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Lien principal du site'
         sortOrder: 1
       -
-        fields:
-          4919cd03-a43a-4d63-856a-0eaf135a26f6:
+        elements:
+          -
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Message d''annonce'
         sortOrder: 2
 handle: siteCTA

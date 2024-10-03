@@ -1,4 +1,4 @@
-baseUrl: $PRIMARY_SITE_URL
+baseUrl: 'https://www.institutdeschaltin.be/'
 enabled: true
 handle: fr
 hasUrls: true

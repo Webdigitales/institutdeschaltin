@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: companyEmail
+instructions: null
+name: 'Société - Société - Adresse email'
+searchable: true
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

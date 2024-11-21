@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: oembed
+instructions: null
+name: 'Élément de contenu - Vidéo - Vidéo'
+searchable: true
+settings:
+  url: ''
+translationKeyFormat: null
+translationMethod: none
+type: wrav\oembed\fields\OembedField

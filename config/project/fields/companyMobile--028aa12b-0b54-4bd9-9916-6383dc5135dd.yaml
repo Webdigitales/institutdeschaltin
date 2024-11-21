@@ -1,0 +1,11 @@
+columnSuffix: null
+handle: companyMobile
+instructions: null
+name: 'Société - Société - Téléphone mobile'
+searchable: true
+settings:
+  defaultRegion: BE
+  previewFormat: null
+translationKeyFormat: null
+translationMethod: none
+type: rynpsc\phonenumber\fields\PhoneNumberField

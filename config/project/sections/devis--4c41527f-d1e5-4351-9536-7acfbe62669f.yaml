@@ -1,9 +1,12 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 942deb63-90ab-46be-b0d3-0103faf943c1 # Devis
 handle: devis
 name: Devis
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: singles/devis

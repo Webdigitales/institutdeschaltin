@@ -1,8 +1,12 @@
+defaultPlacement: end
 handle: mainNavigation
 instructions: 'Navigation principale du site'
-maxNodes: ''
+maxNodes: null
 name: 'Navigation principale'
-propagateNodes: true
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
+    enabled: true
 sortOrder: 1
 structure:
   maxLevels: null

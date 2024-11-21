@@ -1,0 +1,165 @@
+color: null
+fieldLayouts:
+  36da5489-9fd9-4a63-8b57-f13d4d22269b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 7256b8e9-2fde-496b-a5ba-c4bc3de31443
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Nom
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f78c900b-d4b1-407a-b039-517fa1ab2e4b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 9dde5515-c419-4324-974f-d5619d6a1f90 # Société - Société - Adresse
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Adresse
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c2b5f09-4478-466d-a96b-1300f74d8850
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 83d24248-9c65-4dd7-a3a3-091367587376 # Société - Société - Téléphone fixe
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Téléphone fixe'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ddd4a996-49f4-4eaa-84e3-99320c6ee4bb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 028aa12b-0b54-4bd9-9916-6383dc5135dd # Société - Société - Téléphone mobile
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Téléphone mobile'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03109e29-6bdf-428a-8a29-014b209b5ef8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 1e686489-8e62-4cb2-b085-046b7e126e81
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: WhatsApp
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d72de4be-bd4f-430a-ad32-10d69c2f8a01
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 0880362b-ef27-48fb-89d2-a2a24f001940 # Société - Société - FAX
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: FAX
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 036f753d-ab0d-454d-9464-0d3349685b7b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: e0476c6d-ed19-42ee-9c7e-d210a4fa9463 # Société - Société - Adresse email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Adresse email'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fbb99484-dba6-467b-b8ab-07b95cbef6ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: ac3c288a-fb67-4339-a8c4-931d8f78eb2d
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Heures d''ouverture'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 942cef91-f7b3-4dbd-b793-91b4e6d0ae50
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 46854de4-2342-4235-b78a-2f0b518ca03c
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Numéro de TVA'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce4d8667-e80c-4121-9068-43f07e5b0349
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3ec687ac-31b8-4172-abdc-1dd9d9e62253
+        userCondition: null
+handle: company
+hasTitleField: false
+icon: null
+name: Société
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

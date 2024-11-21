@@ -1,5 +1,5 @@
 {# Admin bar plugin #}
-{{ adminbar() }}
+{{ adminBar({ entry: entry }) }}
 
 {# Site header #}
 {% set companyCTA = craft.app.globals.getSetByHandle('siteCTA') %}
@@ -21,7 +21,7 @@
 {% endif %}
 {% if companyInfo.companyGlobalPhone|length %}
 	<div class="header__phone lg:invisible">
-		<a href="tel:{{ companyInfo.companyGlobalPhone.international }}"
+		<a href="{{ companyInfo.companyGlobalPhone.format('rfc3966') }}"
 			 class="link link-phone">
 			<svg class="link__icon icon icon-phone" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
 				<path

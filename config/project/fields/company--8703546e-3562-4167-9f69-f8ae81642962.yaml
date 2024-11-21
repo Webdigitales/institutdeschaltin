@@ -1,14 +1,17 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 2c6828c5-46bf-4ad6-b752-26413ff16eaa
 handle: company
-instructions: ''
+instructions: null
 name: Société
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_company}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    - b1a4b74c-4c0c-464c-ae69-6d414ae47399
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

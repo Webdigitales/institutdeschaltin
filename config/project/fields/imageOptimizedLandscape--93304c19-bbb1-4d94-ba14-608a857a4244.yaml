@@ -1,13 +1,13 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 92928503-08f7-4e8e-a3be-058f6c2f8237
 handle: imageOptimizedLandscape
-instructions: ''
+instructions: null
 name: 'Image Optimized Landscape'
 searchable: true
 settings:
-  displayDominantColorPalette: '1'
-  displayLazyLoadPlaceholderImages: '1'
-  displayOptimizedImageVariants: '1'
+  displayDominantColorPalette: true
+  displayLazyLoadPlaceholderImages: true
+  displayOptimizedImageVariants: true
   fieldVolumeSettings:
     __assoc__:
       -

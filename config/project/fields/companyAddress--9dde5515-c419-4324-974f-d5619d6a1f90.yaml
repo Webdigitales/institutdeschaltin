@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: companyAddress
+instructions: null
+name: 'Société - Société - Adresse'
+searchable: true
+settings:
+  maxAddresses: null
+  minAddresses: null
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Addresses

@@ -26,10 +26,6 @@ return [
     // The secure key Craft will use for hashing and encrypting data
     'securityKey' => getenv('SECURITY_KEY'),
 
-    // Whether to save the project config out to config/project.yaml
-    // (see https://docs.craftcms.com/v3/project-config.html)
-    'useProjectConfigFile' => true,
-
     // Whether the GraphQL API is enabled
     'enableGql' => false,
 
@@ -47,12 +43,6 @@ return [
       'subLeft' => true,
       'subRight' => true,
     ),
-
-    'siteUrl' => [
-      'fr' => getenv('PRIMARY_SITE_URL'),
-      'nl' => getenv('PRIMARY_SITE_URL').'/nl/',
-      'en' => getenv('PRIMARY_SITE_URL').'/en/',
-    ],
 
     'aliases' => [
       '@basePath' => CRAFT_BASE_PATH . '/web/',

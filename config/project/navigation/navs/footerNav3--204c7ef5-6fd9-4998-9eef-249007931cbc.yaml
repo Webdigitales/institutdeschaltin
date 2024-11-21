@@ -1,9 +1,13 @@
+defaultPlacement: end
 handle: footerNav3
-instructions: ''
-maxNodes: ''
+instructions: null
+maxNodes: null
 name: 'Footer nav 3'
-propagateNodes: true
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
+    enabled: true
 sortOrder: 4
 structure:
-  maxLevels: '6'
+  maxLevels: 6
   uid: 491bfc25-4ff2-4155-b2ee-035cfc5daa19

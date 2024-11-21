@@ -1,18 +1,12 @@
-contentColumnType: string
-fieldGroup: a86a3d97-d25d-43f4-84f4-5c70088453d9
+columnSuffix: null
 handle: jobAddress
-instructions: ''
+instructions: null
 name: Adresse
 searchable: true
 settings:
-  addressHelper: null
-  defaultCountry: BE
-  defaultLanguage: fr-BE
-  hideCountryDropdown: null
-  highlightCountries:
-    - BE
-  showCountryDropdown: '1'
-  value: null
+  maxAddresses: null
+  minAddresses: null
+  viewMode: cards
 translationKeyFormat: null
-translationMethod: language
-type: barrelstrength\sproutfields\fields\Address
+translationMethod: site
+type: craft\fields\Addresses

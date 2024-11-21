@@ -2,30 +2,41 @@ fieldLayouts:
   ea278d70-c03b-47e3-817a-8b4dfabfad8f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 646a52cb-addd-4be0-873e-12fb37829ca0
+            elementCondition: null
+            fieldUid: 646a52cb-addd-4be0-873e-12fb37829ca0 # Bouton
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7286b1f0-566a-4237-8fba-0a8c7c818d9b
+            userCondition: null
             warning: null
             width: 100
         name: 'Lien principal du site'
-        sortOrder: 1
+        uid: 086c8216-8f38-40fb-9866-768bd398b11d
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            elementCondition: null
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6 # Call to action
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 74915326-94d8-4438-8eef-b920282f6321
+            userCondition: null
             warning: null
             width: 100
         name: 'Message d''annonce'
-        sortOrder: 2
+        uid: 40e4af9b-0ffc-4f97-8040-d28723a8f04d
+        userCondition: null
 handle: siteCTA
 name: 'Actions globales du site'
+sortOrder: 1

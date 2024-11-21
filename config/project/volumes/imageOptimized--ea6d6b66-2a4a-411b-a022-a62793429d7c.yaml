@@ -2,6 +2,7 @@ fieldLayouts:
   72454ad4-86fc-43b2-8479-6e529c06e321:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -23,34 +26,43 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\TitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: f123c90f-b926-4435-b174-faa1b6f393b6
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: c708f287-50a8-433a-8550-24acbb26de80
+            elementCondition: null
+            fieldUid: c708f287-50a8-433a-8550-24acbb26de80 # Image Optimized Portrait
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5f1133de-a1e2-4ee0-a51d-3b0336a2886a
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 93304c19-bbb1-4d94-ba14-608a857a4244
+            elementCondition: null
+            fieldUid: 93304c19-bbb1-4d94-ba14-608a857a4244 # Image Optimized Landscape
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0117b139-b394-4266-ae6b-c3e147916441
+            userCondition: null
             warning: null
             width: 100
         name: 'Tab 1'
-        sortOrder: 1
+        uid: 88d04414-c17d-467b-ab1d-db65aa3cbe2c
+        userCondition: null
+fs: imageOptimized
 handle: imageOptimized
-hasUrls: true
 name: 'Image Optimized'
-settings:
-  path: '@imagePath'
 sortOrder: 3
-type: craft\volumes\Local
-url: '@imageUrl'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: null
+transformSubpath: ''

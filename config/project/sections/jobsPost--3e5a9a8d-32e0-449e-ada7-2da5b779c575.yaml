@@ -1,9 +1,12 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 85de12f3-33e4-4b99-8ac1-97a901bf6e2f # Jobs post
 handle: jobsPost
 name: 'Jobs post'
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: channels/jobs-post

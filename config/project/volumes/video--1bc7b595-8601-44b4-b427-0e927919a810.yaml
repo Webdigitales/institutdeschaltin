@@ -2,6 +2,7 @@ fieldLayouts:
   54012d05-0c9b-4998-8851-04923184eecb:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -23,16 +26,19 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\TitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 82edc63f-fa11-433b-9074-ec1b685db867
+            userCondition: null
             warning: null
             width: 100
         name: Contenu
-        sortOrder: 1
+        uid: 9b2d4672-c4b6-411a-8797-c40a17b02c24
+        userCondition: null
+fs: video
 handle: video
-hasUrls: true
 name: Video
-settings:
-  path: '@videoPath'
 sortOrder: 2
-type: craft\volumes\Local
-url: '@videoUrl'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: null
+transformSubpath: ''

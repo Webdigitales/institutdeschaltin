@@ -1,4 +1,4 @@
-dateModified: 1724154487
+dateModified: 1732205957
 email:
   fromEmail: info@institutdeschaltin.be
   fromName: 'Institut de Schaltin'
@@ -7,6 +7,87 @@ email:
   transportSettings:
     command: '/usr/sbin/sendmail -t'
   transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0f6172ae-c4cf-45c4-859a-3fcc1f7097b6: Client # Client
+    1bc7b595-8601-44b4-b427-0e927919a810: Video # Video
+    2f60ef7a-837d-4716-912c-7fc5b50d4b71: 'Blog post' # Blog post
+    3b551920-73fc-43d4-bd86-26a393e97956: 'Message d''annonce' # Message d'annonce
+    3e0fe01c-2d9b-4053-ab3e-6cd51ddcf4a7: Cookies # Cookies
+    3e5a9a8d-32e0-449e-ada7-2da5b779c575: 'Jobs post' # Jobs post
+    3e900d98-54ec-4e2d-a91b-7ede3467ce55: 'Footer nav 2' # Footer nav 2
+    4a6b3f56-c796-4e8a-b5c9-0372934e6dd3: 'Téléphone principal' # Téléphone principal
+    4c41527f-d1e5-4351-9536-7acfbe62669f: Devis # Devis
+    4ca2da81-4b18-4721-b01b-4e912d2c2856: Période # Période
+    6ed23178-159e-4493-b043-2d90c1d185a6: 'Élément de contenu - Colonnes - Colonne Block' # Élément de contenu - Colonnes - Colonne Block
+    7c2a27c3-78f2-4fe9-872b-75d6e2b18f32: Références # Références
+    7f8830ab-b590-4295-8d8d-cb718dffaad4: Webdigitales # Webdigitales
+    7f9480f9-e4e2-4922-946b-3296c403a062: Références # Références
+    08c521cf-a8a6-467e-8ae6-ffcb131478c1: Titre # Titre
+    9dde5515-c419-4324-974f-d5619d6a1f90: 'Société - Société - Adresse' # Société - Société - Adresse
+    12a7f841-74b6-4229-8266-fd7a6d4dd2d8: SEO # SEO
+    13fef461-c9f9-4bb3-a8e2-02de8fa96df3: Contact # Contact
+    028aa12b-0b54-4bd9-9916-6383dc5135dd: 'Société - Société - Téléphone mobile' # Société - Société - Téléphone mobile
+    31ad9b5c-ed47-4253-8528-65c2d6286ea5: Blog # Blog
+    38c4e94a-7885-4f9a-9a43-af0281c8d38b: Fonction # Fonction
+    41dc0c40-425c-4459-beda-9c1a12cac627: 'Élément de contenu - Colonnes - Colonne' # Élément de contenu - Colonnes - Colonne
+    83d24248-9c65-4dd7-a3a3-091367587376: 'Société - Société - Téléphone fixe' # Société - Société - Téléphone fixe
+    85de12f3-33e4-4b99-8ac1-97a901bf6e2f: 'Jobs post' # Jobs post
+    88a520ab-f3c1-4146-a1f1-806a69ad145b: Citation # Citation
+    92e275a5-e6b3-46c4-aa82-edba763a9f57: 'Infos de la société' # Infos de la société
+    97de7b47-515f-4d89-a189-4585140f7564: Intro # Intro
+    132f5cab-adae-46b1-a621-463cfb81f139: 'Type de contrat' # Type de contrat
+    204c7ef5-6fd9-4998-9eef-249007931cbc: 'Footer nav 3' # Footer nav 3
+    236cfc78-b35d-4463-ba24-92e44d63c5fd: 'Réseaux sociaux' # Réseaux sociaux
+    315a30a3-e7a6-4cfc-adea-460fec48aba9: 'Actions globales du site' # Actions globales du site
+    403f5181-c545-4581-8271-e4ca8f45047b: 'Vidéo Banner' # Vidéo Banner
+    480ca47f-2dae-40e7-857f-dc8c7d7a15c8: Services # Services
+    646a52cb-addd-4be0-873e-12fb37829ca0: Bouton # Bouton
+    0770e3e0-f0c3-41a2-b5f4-3c30ad3a4539: 'Lien externe' # Lien externe
+    919bb281-dc26-4cb0-91cd-80485375398c: Contact # Contact
+    942deb63-90ab-46be-b0d3-0103faf943c1: Devis # Devis
+    2057e90b-1336-40e0-853d-cc3e07f2d0dc: Service # Service
+    2959ce8c-185b-4a61-9766-9db4346fb6b9: Blog # Blog
+    4919cd03-a43a-4d63-856a-0eaf135a26f6: 'Call to action' # Call to action
+    5560a7fb-c916-433d-a513-68656682ad15: 'Nom société principale' # Nom société principale
+    7082ecb0-2931-42bd-928e-cd9c70a22f5c: Partenaires # Partenaires
+    32712cfb-8a4d-4f62-ae43-0e6ed9c8714f: 'Élément de contenu' # Élément de contenu
+    35501ad3-f7ed-48c2-b273-8aa2bfbc9bce: Services # Services
+    93304c19-bbb1-4d94-ba14-608a857a4244: 'Image Optimized Landscape' # Image Optimized Landscape
+    98489ce8-64b5-43c5-bbef-4a4f183e120f: Accueil # Accueil
+    314970cb-0933-4fbe-bc95-5dda6e8752e3: 'Numéro TVA principal' # Numéro TVA principal
+    784550ee-5357-46ca-beda-75e0d4c17c6b: 'Footer nav 1' # Footer nav 1
+    0880362b-ef27-48fb-89d2-a2a24f001940: 'Société - Société - FAX' # Société - Société - FAX
+    8703546e-3562-4167-9f69-f8ae81642962: Société # Société
+    20358850-5954-4f58-8dc5-0b46ec90da16: Accueil # Accueil
+    41489074-9ab1-4321-b20d-381720e6a66a: 'Public Schema' # Public Schema
+    a1ce91a5-57d4-4265-947f-535f54610d08: Image # Image
+    a2da888b-db6e-4b52-99a8-e1f653f56126: 'Page par défaut' # Page par défaut
+    a6aef78c-fa88-4853-ac84-74bffb24b3f1: Description # Description
+    a86216ee-c6c3-45c8-a564-2d362739286f: Client # Client
+    ad0fba5f-c5c2-4a96-b257-1be330b34493: 'Page simple' # Page simple
+    adfe2f96-04c0-4fc4-8f4f-f59addc2041f: Référence # Référence
+    b7c57c63-a882-48cf-821a-46babb7682f7: 'Site principal' # Site principal
+    b16cbe4c-4d50-45fc-81dc-fa916cc2a69b: Adresse # Adresse
+    bb82949d-0f4f-4146-b18c-b3883d2cabbf: Partenaire # Partenaire
+    be7e21da-3d72-4591-8a66-e7de59c87263: 'Navigation principale' # Navigation principale
+    bea6f06f-12a3-4d09-87c6-94d98009d10e: Service # Service
+    bf2d541f-8fe7-4a47-b310-e5a593ac1f80: Partenaire # Partenaire
+    c07eddc2-b81a-4da4-b158-be51d92e0dba: Référence # Référence
+    c708f287-50a8-433a-8550-24acbb26de80: 'Image Optimized Portrait' # Image Optimized Portrait
+    c760f6d8-ce7d-4f75-9c11-52c6d89dddd6: 'Footer legal nav' # Footer legal nav
+    c8869b87-33d5-450c-be1b-ed87cf5f228a: Cookies # Cookies
+    dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5: 'Landing page' # Landing page
+    e0476c6d-ed19-42ee-9c7e-d210a4fa9463: 'Société - Société - Adresse email' # Société - Société - Adresse email
+    e28aa48b-4434-4653-b32f-74a65893b254: 'Crop carré' # Crop carré
+    e2534363-fdaa-43e5-b0fc-3d39f735a6a5: Partenaires # Partenaires
+    e3415183-c41b-406f-b496-b97591cc0484: 'Institut de Schaltin' # Institut de Schaltin
+    ea6d6b66-2a4a-411b-a022-a62793429d7c: 'Image Optimized' # Image Optimized
+    f08c2cd5-ea7b-4600-95fd-e924af4c8bf6: 'Blog post' # Blog post
+    f82c5147-f86c-4271-bddd-efe754d2ac08: Page # Page
+    f344c84e-a3c4-49e3-8038-660f592f9d47: Jobs # Jobs
+    f535bc93-4871-4555-895b-1bb300254305: Jobs # Jobs
+    fe503bc1-01d1-4e05-b46d-a473418e79dd: 'Landing page' # Landing page
 plugins:
   admin-bar:
     edition: standard
@@ -55,12 +136,35 @@ plugins:
       prependSubject: 'Nouveau message sur votre site internet'
       successFlashMessage: 'Votre message a été envoyé.'
       toEmail: formulaire_web@institutdeschaltin.be
+  contact-form-extensions:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      confirmationSubject: ''
+      confirmationTemplate: ''
+      enableConfirmationEmail: ''
+      enableDatabase: '1'
+      enableRecaptchaOverride: ''
+      enableTemplateOverwrite: ''
+      notificationTemplate: ''
+      recaptcha: '1'
+      recaptchaDataBadge: bottomright
+      recaptchaDebug: ''
+      recaptchaHideBadge: ''
+      recaptchaSecretKey: 6LcbA4UqAAAAAC9Csr4l243j52I2OJjqigxPOar5
+      recaptchaSiteKey: 6LcbA4UqAAAAAMDpmdQbsLMGKAJSp-jvvac_K7OQ
+      recaptchaThreshold: '0.5'
+      recaptchaTimeout: '5'
+      recaptchaUrl: ''
+      recaptchaVerificationUrl: ''
+      recaptchaVersion: '3'
   contact-form-honeypot:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
     settings:
-      honeypotParam: honeypotReCaptcha
+      honeypotParam: comment
   environment-label:
     edition: standard
     enabled: true
@@ -73,12 +177,26 @@ plugins:
       suffixText: null
       targetSelector: '#global-header:before'
       textColor: '#fff'
-  google-tag-manager:
+  gtag:
     edition: standard
     enabled: true
-    schemaVersion: 1.1.0
+    schemaVersion: 1.0.0
     settings:
-      containerID: GTM-5Q3WDPJ
+      cookieFlags:
+        __assoc__:
+          -
+            - e3415183-c41b-406f-b496-b97591cc0484 # Institut de Schaltin
+            - SameSite=Lax;Secure
+      measurementId:
+        __assoc__:
+          -
+            - e3415183-c41b-406f-b496-b97591cc0484 # Institut de Schaltin
+            - GTM-5Q3WDPJ
+      onlyProduction:
+        __assoc__:
+          -
+            - e3415183-c41b-406f-b496-b97591cc0484 # Institut de Schaltin
+            - '1'
   image-optimize:
     edition: standard
     enabled: true
@@ -132,11 +250,15 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: GM5K1QPEHX6MW6IJJXAR9SCL
-    schemaVersion: 1.0.21
+    schemaVersion: 2.1.0
   oembed:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
+  phone-number:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
@@ -144,57 +266,7 @@ plugins:
   seo:
     edition: standard
     enabled: true
-    schemaVersion: 3.1.1
-    settings:
-      description: ''
-      facebookAppId: ''
-      metaTemplate: ''
-      removeAlternateUrls: ''
-      robots:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
-      sitemapLimit: '1000'
-      sitemapName: sitemap
-      socialImage:
-        - '164'
-      title:
-        -
-          __assoc__:
-            -
-              - key
-              - '1'
-            -
-              - locked
-              - '0'
-            -
-              - template
-              - '{title}'
-        -
-          __assoc__:
-            -
-              - key
-              - '2'
-            -
-              - locked
-              - '1'
-            -
-              - template
-              - ' - {{ siteName }}'
-      titleSuffix: null
-      twitterHandle: ''
-  sprout-fields:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.5.3
-  super-table:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.2.1
+    schemaVersion: 3.2.0
   templatecomments:
     edition: standard
     enabled: true
@@ -202,7 +274,7 @@ plugins:
   typedlinkfield:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 2.0.0
   video-embedder:
     edition: standard
     enabled: false
@@ -212,5 +284,5 @@ system:
   live: true
   name: 'Institut de Schaltin'
   retryDuration: null
-  schemaVersion: 3.5.13
+  schemaVersion: 5.5.0.0
   timeZone: Europe/Brussels

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: column
+instructions: null
+name: 'Élément de contenu - Colonnes - Colonne'
+searchable: true
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 6ed23178-159e-4493-b043-2d90c1d185a6 # Élément de contenu - Colonnes - Colonne Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,17 +1,11 @@
-contentColumnType: string
-fieldGroup: 2c6828c5-46bf-4ad6-b752-26413ff16eaa
+columnSuffix: null
 handle: companyGlobalPhone
-instructions: ''
+instructions: null
 name: 'Téléphone principal'
 searchable: true
 settings:
-  country: BE
-  customPatternErrorMessage: ''
-  customPatternToggle: null
-  inputMask: null
-  limitToSingleCountry: ''
-  mask: null
-  placeholder: ''
+  defaultRegion: BE
+  previewFormat: null
 translationKeyFormat: null
 translationMethod: none
-type: barrelstrength\sproutfields\fields\Phone
+type: rynpsc\phonenumber\fields\PhoneNumberField

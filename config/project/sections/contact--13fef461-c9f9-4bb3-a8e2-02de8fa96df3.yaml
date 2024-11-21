@@ -1,9 +1,12 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 919bb281-dc26-4cb0-91cd-80485375398c # Contact
 handle: contact
 name: Contact
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: singles/contact

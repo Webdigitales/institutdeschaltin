@@ -55,8 +55,8 @@
 										T.&nbsp;:
 									</span>
 									<span class="item__text">
-										<a href="tel:{{ block.companyPhone.international }}"
-											 class="item__link">{{ block.companyPhone.international }}</a>
+										<a href="{{ block.companyPhone.format('international') }}"
+											 class="item__link">{{ block.companyPhone.format('rfc3966') }}</a>
 									</span>
 								</li>
 							{% endif %}
@@ -66,8 +66,8 @@
 										M.&nbsp;:
 									</span>
 									<span class="item__text">
-										<a href="tel:{{ block.companyMobile.international }}"
-											 class="item__link">{{ block.companyMobile.international }}</a>
+										<a href="{{ block.companyMobile.format('international') }}"
+											 class="item__link">{{ block.companyMobile.format('rfc3966') }}</a>
 									</span>
 								</li>
 							{% endif %}
@@ -77,8 +77,8 @@
 										FAX&nbsp;:
 									</span>
 									<span class="item__text">
-										<a href="tel:{{ block.companyFax.international }}"
-											 class="item__link">{{ block.companyFax.international }}</a>
+										<a href="{{ block.companyFax.format('international') }}"
+											 class="item__link">{{ block.companyFax.format('rfc3966') }}</a>
 									</span>
 								</li>
 							{% endif %}

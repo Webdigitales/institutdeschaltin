@@ -1,14 +1,17 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 3cf03712-85e6-458d-b266-ebbcff427daa
 handle: cta
-instructions: ''
+instructions: null
 name: 'Call to action'
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_cta}}'
-  maxBlocks: '1'
-  minBlocks: '1'
+  entryTypes:
+    - 005093b9-ee33-49f7-bea4-a7a2639ee743
+  maxEntries: 1
+  minEntries: 1
+  propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

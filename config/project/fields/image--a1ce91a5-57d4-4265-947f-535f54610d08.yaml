@@ -1,30 +1,34 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 3cf03712-85e6-458d-b266-ebbcff427daa
 handle: image
-instructions: ''
+instructions: null
 name: Image
 searchable: true
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:ea6d6b66-2a4a-411b-a022-a62793429d7c' # Image Optimized
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
   previewMode: full
-  restrictFiles: ''
-  selectionLabel: ''
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:1bc7b595-8601-44b4-b427-0e927919a810' # Video
+  restrictedLocationSubpath: null
+  selectionLabel: null
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:1bc7b595-8601-44b4-b427-0e927919a810'
-  singleUploadLocationSubpath: ''
-  source: null
   sources:
-    - 'volume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
+    - 'volume:ea6d6b66-2a4a-411b-a022-a62793429d7c' # Image Optimized
   targetSiteId: null
-  useSingleFolder: false
   validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null

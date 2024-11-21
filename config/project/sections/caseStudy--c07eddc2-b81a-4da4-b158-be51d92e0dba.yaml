@@ -1,9 +1,12 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - adfe2f96-04c0-4fc4-8f4f-f59addc2041f # Référence
 handle: caseStudy
 name: Référence
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: structures/casestudy

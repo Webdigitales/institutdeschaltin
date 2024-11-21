@@ -1,4 +1,7 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - e2534363-fdaa-43e5-b0fc-3d39f735a6a5 # Partenaires
 handle: partners
 name: Partenaires
 previewTargets:
@@ -15,7 +18,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: singles/partners

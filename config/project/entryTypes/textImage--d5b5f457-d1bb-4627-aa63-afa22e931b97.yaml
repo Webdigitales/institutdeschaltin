@@ -1,0 +1,101 @@
+color: null
+fieldLayouts:
+  280a502c-b8f8-4078-8844-1a2db4dccb9f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: d3554191-07da-48af-83d9-f187146fe42d
+            handle: heading
+            includeInCards: true
+            instructions: null
+            label: Titre
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6e4abed-333b-471a-8f10-e35102d3c2e8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 0c49124f-4356-423c-a6ea-2527acb8571e
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Texte
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 675d5d8e-eb65-435b-8e51-dcc5f9babf2b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 412ecc11-2b32-45e8-b031-8c74cd5dfbaf
+            handle: button
+            includeInCards: false
+            instructions: null
+            label: Bouton
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7bc1bd74-42b5-4c72-be4b-21b7e493c8a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 540afda3-0fa1-40ac-9198-cff870691c02
+            handle: image
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ab0237ab-4059-41fd-9229-98b69ef8e491
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: ef1324a5-43ea-488c-979f-7043cde3093e
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Image à droite'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ecc6ef5d-0a8b-45c9-a8ef-d144b5e10f4f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 62465a42-3543-4b5d-af86-16846008782a
+        userCondition: null
+handle: textImage
+hasTitleField: false
+icon: null
+name: 'Texte + Image'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

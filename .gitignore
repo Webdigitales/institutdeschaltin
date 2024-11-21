@@ -7,6 +7,7 @@ Thumbs.db
 *.sublime-workspace
 *.sublime-project
 *.vscode
+.idea
 
 # Craft Environment Configs
 .env

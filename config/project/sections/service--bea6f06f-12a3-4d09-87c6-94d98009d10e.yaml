@@ -1,9 +1,12 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 2057e90b-1336-40e0-853d-cc3e07f2d0dc # Service
 handle: service
 name: Service
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: structures/service

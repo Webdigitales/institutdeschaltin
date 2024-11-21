@@ -1,0 +1,85 @@
+color: null
+fieldLayouts:
+  d4caff31-7538-4056-b9f5-7ecad7c80707:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 1f45a32b-94ab-47e0-a092-d4bc87f412c6
+            handle: image
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 096b2660-de46-4126-9523-51ab5cd7fcf3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 6baa3957-714d-4ca3-a553-9dc75eaf2cf3
+            handle: heading
+            includeInCards: true
+            instructions: null
+            label: Titre
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3359ebee-0984-4759-adfd-935d61150a97
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 91f341c6-6785-4efb-9e1e-a369bb49c3e6
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Texte
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df15c03e-9d99-4daf-a4fa-6c15a9edbc84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: d4b19b79-cd6e-4287-8892-98d372166baa
+            handle: button
+            includeInCards: false
+            instructions: null
+            label: Bouton
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d7f336f-7fd0-4927-9915-bebd883a82cc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fc2739ac-a30d-42e5-a28b-0555a88fe16d
+        userCondition: null
+handle: columnBlock
+hasTitleField: false
+icon: null
+name: 'Élément de contenu - Colonnes - Colonne Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

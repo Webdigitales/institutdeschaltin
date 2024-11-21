@@ -2,6 +2,7 @@ fieldLayouts:
   f6e1e069-af86-48b0-a342-9261caa452af:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: Titre
             max: null
@@ -23,81 +26,110 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b3fd9ddb-4bd9-428a-aa8d-155a67cf9245
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            elementCondition: null
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1 # Titre
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e20a96b1-46f2-4816-96f9-c9df96900fec
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: a1ce91a5-57d4-4265-947f-535f54610d08
+            elementCondition: null
+            fieldUid: a1ce91a5-57d4-4265-947f-535f54610d08 # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e3c904be-882b-458a-b0b2-617513ab29a5
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 646a52cb-addd-4be0-873e-12fb37829ca0
+            elementCondition: null
+            fieldUid: 646a52cb-addd-4be0-873e-12fb37829ca0 # Bouton
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: da0b6ec3-17d2-4dd3-97bd-bd87992fc470
+            userCondition: null
             warning: null
             width: 100
         name: 'Page header'
-        sortOrder: 1
+        uid: 9f2de192-f80c-4a72-81ee-ecb526817628
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 32712cfb-8a4d-4f62-ae43-0e6ed9c8714f
+            elementCondition: null
+            fieldUid: 32712cfb-8a4d-4f62-ae43-0e6ed9c8714f # Élément de contenu
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1123c91d-2ba7-43a5-80d0-db6e0cfd02ad
+            userCondition: null
             warning: null
             width: 100
         name: 'Contenu principal'
-        sortOrder: 2
+        uid: 70cb3c2c-3896-450f-bdf8-37fd3c034ce9
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            elementCondition: null
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6 # Call to action
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cdef234e-8473-4965-baff-ca65b41a8b95
+            userCondition: null
             warning: null
             width: 100
         name: 'Call to action'
-        sortOrder: 3
+        uid: 823bdc03-93fb-4331-ae97-7eeb5f588a0f
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            elementCondition: null
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8 # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f414372e-3c64-491a-ad17-330d98cddd48
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 4
+        uid: 9a717db8-bcaf-4cc5-89de-04d389030d24
+        userCondition: null
 handle: landingPage
 hasTitleField: false
 name: 'Landing page'
-section: dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heading}'
 titleTranslationKeyFormat: null

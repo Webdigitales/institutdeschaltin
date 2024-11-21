@@ -1,17 +1,17 @@
+columnSuffix: null
 contentColumnType: string(1000)
-fieldGroup: 3cf03712-85e6-458d-b266-ebbcff427daa
 handle: heading
-instructions: ''
+instructions: null
 name: Titre
 searchable: true
 settings:
   byteLimit: null
   charLimit: 250
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

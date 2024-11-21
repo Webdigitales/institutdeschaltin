@@ -2,6 +2,7 @@ fieldLayouts:
   d1186833-257d-40f8-822d-8eae1ae98b10:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: Titre
             max: null
@@ -23,86 +26,116 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 323733c4-d34f-4c55-96b8-f66c33ff9121
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            elementCondition: null
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1 # Titre
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cdbaadef-0192-464c-8678-0f197fb3d53a
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: b16cbe4c-4d50-45fc-81dc-fa916cc2a69b
+            elementCondition: null
+            fieldUid: b16cbe4c-4d50-45fc-81dc-fa916cc2a69b # Adresse
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9c1b4616-c3cb-4186-b19d-da16f8fe6647
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 4ca2da81-4b18-4721-b01b-4e912d2c2856
+            elementCondition: null
+            fieldUid: 4ca2da81-4b18-4721-b01b-4e912d2c2856 # Période
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 69a5b409-73b8-4562-bcca-cee974faec13
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 132f5cab-adae-46b1-a621-463cfb81f139
+            elementCondition: null
+            fieldUid: 132f5cab-adae-46b1-a621-463cfb81f139 # Type de contrat
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f1e5a1e1-0a47-4bb0-8af6-97a45cf3de2d
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: a6aef78c-fa88-4853-ac84-74bffb24b3f1
+            elementCondition: null
+            fieldUid: a6aef78c-fa88-4853-ac84-74bffb24b3f1 # Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 370965d1-e306-4951-b697-e9223e1fae71
+            userCondition: null
             warning: null
             width: 100
         name: Job
-        sortOrder: 1
+        uid: b836f0d5-f2b4-4a9f-afa3-64c87969a978
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6
+            elementCondition: null
+            fieldUid: 4919cd03-a43a-4d63-856a-0eaf135a26f6 # Call to action
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: da661d17-74e9-472f-8e2f-c7abf85cbb68
+            userCondition: null
             warning: null
             width: 100
         name: 'Call to action'
-        sortOrder: 2
+        uid: 8b8a99ea-0400-424b-bf9f-30456caa4c07
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            elementCondition: null
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8 # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 63a9a1c6-36b2-4a6a-9a3e-2d949dd150e8
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 3
+        uid: 1c71e684-4c6e-41f0-8f04-24646302bde2
+        userCondition: null
 handle: jobsPost
 hasTitleField: false
 name: 'Jobs post'
-section: 3e5a9a8d-32e0-449e-ada7-2da5b779c575
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heading}'
 titleTranslationKeyFormat: null

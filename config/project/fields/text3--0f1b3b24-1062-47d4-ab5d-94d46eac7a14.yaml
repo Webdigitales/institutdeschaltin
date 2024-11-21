@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: text3
+instructions: null
+name: 'Élément de contenu - Référence contenu - Références - Texte'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: urlSocialMedia
+instructions: null
+name: 'Réseaux sociaux - Réseau social - Url'
+searchable: true
+settings:
+  maxLength: 255
+  showLabelField: false
+  showTargetField: false
+  types:
+    - entry
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

@@ -2,6 +2,7 @@ fieldLayouts:
   df1b3402-257c-4ea2-a598-9a9a16e72aa5:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,8 +10,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
-            instructions: ''
+            inputType: null
+            instructions: null
             label: __blank__
             max: null
             min: null
@@ -23,42 +26,56 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7cf558a4-b63b-4692-a44e-d34ceee0c959
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            elementCondition: null
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1 # Titre
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a089d1e3-e6fe-47e7-b047-d5add036a4bc
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: a1ce91a5-57d4-4265-947f-535f54610d08
+            elementCondition: null
+            fieldUid: a1ce91a5-57d4-4265-947f-535f54610d08 # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b7c6ad43-93a9-43dc-9748-3347db1472be
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 0770e3e0-f0c3-41a2-b5f4-3c30ad3a4539
+            elementCondition: null
+            fieldUid: 0770e3e0-f0c3-41a2-b5f4-3c30ad3a4539 # Lien externe
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 86850746-265e-46eb-99c3-1769a54d6607
+            userCondition: null
             warning: null
             width: 100
         name: Contenu
-        sortOrder: 1
+        uid: d3186727-5d83-4af6-a737-e5be6dbb9285
+        userCondition: null
 handle: partner
 hasTitleField: false
 name: Partenaire
-section: bb82949d-0f4f-4146-b18c-b3883d2cabbf
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heading}'
 titleTranslationKeyFormat: null

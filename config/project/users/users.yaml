@@ -1,6 +1,6 @@
 allowPublicRegistration: false
 defaultGroup: ''
 photoSubpath: null
-photoVolumeUid: ea6d6b66-2a4a-411b-a022-a62793429d7c
+photoVolumeUid: ea6d6b66-2a4a-411b-a022-a62793429d7c # Image Optimized
 requireEmailVerification: true
 suspendByDefault: false

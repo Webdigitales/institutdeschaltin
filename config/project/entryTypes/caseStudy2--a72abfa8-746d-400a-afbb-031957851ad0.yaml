@@ -1,0 +1,85 @@
+color: null
+fieldLayouts:
+  2f9fb387-e61b-4f86-8adf-079d7391195e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: ba25bb94-dc4e-4999-bc89-8b4d4432c4ee
+            handle: tag
+            includeInCards: true
+            instructions: null
+            label: Tag
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea228f50-ea5d-4e28-8117-83ccd0fde812
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: b026272d-3176-4da6-9e08-78c68e0a33ef
+            handle: heading
+            includeInCards: false
+            instructions: null
+            label: Titre
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0b02249-7c6d-4169-aa4b-4157c047d330
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 0f1b3b24-1062-47d4-ab5d-94d46eac7a14
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Texte
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e07c5af3-a5a5-4a88-b0c0-f26780e4c6bd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: f2abb5e0-2c28-424c-934d-be969fc1ff58
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Référence
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15a69690-a5c1-4923-8c82-c6a9fefb3e12
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 75989a7b-a2eb-4d34-bf3d-8d05d31c5451
+        userCondition: null
+handle: caseStudy2
+hasTitleField: false
+icon: null
+name: 'Référence contenu - Références'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

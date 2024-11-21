@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: CaseStudy
+instructions: null
+name: 'Élément de contenu - Référence contenu - Références - Référence'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources:
+    - 'section:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

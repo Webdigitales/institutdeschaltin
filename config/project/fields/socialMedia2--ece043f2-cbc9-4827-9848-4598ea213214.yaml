@@ -1,0 +1,77 @@
+columnSuffix: null
+handle: socialMedia2
+instructions: null
+name: 'Réseaux sociaux - Réseau social - Réseau social'
+searchable: true
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Facebook
+        -
+          - value
+          - facebook
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Instagram
+        -
+          - value
+          - instagram
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Twitter
+        -
+          - value
+          - twitter
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Youtube
+        -
+          - value
+          - youtube
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Vimeo
+        -
+          - value
+          - vimeo
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - linkdedIn
+        -
+          - value
+          - linkedin
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

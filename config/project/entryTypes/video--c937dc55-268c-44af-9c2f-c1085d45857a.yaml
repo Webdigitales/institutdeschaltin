@@ -1,0 +1,37 @@
+color: null
+fieldLayouts:
+  709b8e02-4abd-412a-b963-f5b14954ccbf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 5660be1a-d117-4f7a-b667-8b2e0fba12b4
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Vidéo
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3bbaa848-adce-41d8-9ba1-bc50d0c07f9b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f057e3c1-3990-4a9c-b17a-9b42df1a50f0
+        userCondition: null
+handle: video
+hasTitleField: false
+icon: null
+name: Vidéo
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

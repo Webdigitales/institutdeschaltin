@@ -1,17 +1,17 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: a86a3d97-d25d-43f4-84f4-5c70088453d9
 handle: jobContractType
-instructions: ''
+instructions: null
 name: 'Type de contrat'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: language

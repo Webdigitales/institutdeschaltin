@@ -2,57 +2,77 @@ fieldLayouts:
   444ac587-370d-4ba5-abd4-ba0a56b923e9:
     tabs:
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 5560a7fb-c916-433d-a513-68656682ad15
+            elementCondition: null
+            fieldUid: 5560a7fb-c916-433d-a513-68656682ad15 # Nom société principale
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a8b12bf7-dcbc-4cf7-8c59-cb5aaf1e1e62
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 4a6b3f56-c796-4e8a-b5c9-0372934e6dd3
+            elementCondition: null
+            fieldUid: 4a6b3f56-c796-4e8a-b5c9-0372934e6dd3 # Téléphone principal
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: de6a2d1d-6d7d-481f-8093-6c6dff124ab8
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 314970cb-0933-4fbe-bc95-5dda6e8752e3
+            elementCondition: null
+            fieldUid: 314970cb-0933-4fbe-bc95-5dda6e8752e3 # Numéro TVA principal
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 267cf191-1b9a-4e1d-9c5d-53e7b2ccbdb3
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 8703546e-3562-4167-9f69-f8ae81642962
+            elementCondition: null
+            fieldUid: 8703546e-3562-4167-9f69-f8ae81642962 # Société
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6b8865f5-4313-4156-b88d-ccb82ad820f1
+            userCondition: null
             warning: null
             width: 100
         name: 'Infos de contact'
-        sortOrder: 1
+        uid: 2c55ac8d-20f5-4165-af49-c35b2480c308
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 236cfc78-b35d-4463-ba24-92e44d63c5fd
+            elementCondition: null
+            fieldUid: 236cfc78-b35d-4463-ba24-92e44d63c5fd # Réseaux sociaux
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6a0f55a3-ae7e-4c4a-a7cb-ff12f973ab16
+            userCondition: null
             warning: null
             width: 100
         name: 'Réseaux sociaux'
-        sortOrder: 2
+        uid: d666e8b3-3749-4f96-8c9d-1fca8299b1eb
+        userCondition: null
 handle: companyInfo
 name: 'Infos de la société'
+sortOrder: 2

@@ -1,122 +1,121 @@
-description: ''
+description: null
 handle: client
 name: Client
 permissions:
-  - accesssitewhensystemisoff
+  - accesscp
   - accesscpwhensystemisoff
   - accessplugin-navigation
   - accessplugin-seo
-  - accesscp
-  - customizesources
-  - 'editsite:e3415183-c41b-406f-b496-b97591cc0484'
+  - accesssitewhensystemisoff
+  - 'createentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'createentries:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'createentries:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'createentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'createentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'createentries:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'createfolders:1bc7b595-8601-44b4-b427-0e927919a810' # Video
+  - 'createfolders:ea6d6b66-2a4a-411b-a022-a62793429d7c' # Image Optimized
+  - 'deleteentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'deleteentries:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'deleteentries:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'deleteentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'deleteentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'deleteentries:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'deletepeerentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'deletepeerentries:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'deletepeerentries:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'deletepeerentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'deletepeerentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'deletepeerentries:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'deletepeerentrydrafts:13fef461-c9f9-4bb3-a8e2-02de8fa96df3' # Contact
+  - 'deletepeerentrydrafts:20358850-5954-4f58-8dc5-0b46ec90da16' # Accueil
+  - 'deletepeerentrydrafts:31ad9b5c-ed47-4253-8528-65c2d6286ea5' # Blog
+  - 'deletepeerentrydrafts:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce' # Services
+  - 'deletepeerentrydrafts:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'deletepeerentrydrafts:4c41527f-d1e5-4351-9536-7acfbe62669f' # Devis
+  - 'deletepeerentrydrafts:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'deletepeerentrydrafts:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'deletepeerentrydrafts:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'deletepeerentrydrafts:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'deletepeerentrydrafts:f344c84e-a3c4-49e3-8038-660f592f9d47' # Jobs
+  - 'deletepeerentrydrafts:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'editglobalset:315a30a3-e7a6-4cfc-adea-460fec48aba9' # Actions globales du site
+  - 'editglobalset:92e275a5-e6b3-46c4-aa82-edba763a9f57' # Infos de la société
   - 'editsite:d7655a13-1d4e-455c-8ce3-29ab32497ad4'
-  - 'publishentries:20358850-5954-4f58-8dc5-0b46ec90da16'
-  - 'publishpeerentrydrafts:20358850-5954-4f58-8dc5-0b46ec90da16'
-  - 'deletepeerentrydrafts:20358850-5954-4f58-8dc5-0b46ec90da16'
-  - 'editpeerentrydrafts:20358850-5954-4f58-8dc5-0b46ec90da16'
-  - 'editentries:20358850-5954-4f58-8dc5-0b46ec90da16'
-  - 'publishentries:31ad9b5c-ed47-4253-8528-65c2d6286ea5'
-  - 'publishpeerentrydrafts:31ad9b5c-ed47-4253-8528-65c2d6286ea5'
-  - 'deletepeerentrydrafts:31ad9b5c-ed47-4253-8528-65c2d6286ea5'
-  - 'editpeerentrydrafts:31ad9b5c-ed47-4253-8528-65c2d6286ea5'
-  - 'editentries:31ad9b5c-ed47-4253-8528-65c2d6286ea5'
-  - 'createentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'publishentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'deleteentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'publishpeerentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'deletepeerentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'editpeerentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'publishpeerentrydrafts:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'deletepeerentrydrafts:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'editpeerentrydrafts:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'editentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6'
-  - 'publishentries:13fef461-c9f9-4bb3-a8e2-02de8fa96df3'
-  - 'publishpeerentrydrafts:13fef461-c9f9-4bb3-a8e2-02de8fa96df3'
-  - 'deletepeerentrydrafts:13fef461-c9f9-4bb3-a8e2-02de8fa96df3'
-  - 'editpeerentrydrafts:13fef461-c9f9-4bb3-a8e2-02de8fa96df3'
-  - 'editentries:13fef461-c9f9-4bb3-a8e2-02de8fa96df3'
-  - 'publishentries:4c41527f-d1e5-4351-9536-7acfbe62669f'
-  - 'publishpeerentrydrafts:4c41527f-d1e5-4351-9536-7acfbe62669f'
-  - 'deletepeerentrydrafts:4c41527f-d1e5-4351-9536-7acfbe62669f'
-  - 'editpeerentrydrafts:4c41527f-d1e5-4351-9536-7acfbe62669f'
-  - 'editentries:4c41527f-d1e5-4351-9536-7acfbe62669f'
-  - 'publishentries:f344c84e-a3c4-49e3-8038-660f592f9d47'
-  - 'publishpeerentrydrafts:f344c84e-a3c4-49e3-8038-660f592f9d47'
-  - 'deletepeerentrydrafts:f344c84e-a3c4-49e3-8038-660f592f9d47'
-  - 'editpeerentrydrafts:f344c84e-a3c4-49e3-8038-660f592f9d47'
-  - 'editentries:f344c84e-a3c4-49e3-8038-660f592f9d47'
-  - 'createentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'publishentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'deleteentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'publishpeerentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'deletepeerentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'editpeerentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'publishpeerentrydrafts:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'deletepeerentrydrafts:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'editpeerentrydrafts:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'editentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575'
-  - 'createentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'publishentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'deleteentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'publishpeerentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'deletepeerentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'editpeerentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'publishpeerentrydrafts:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'deletepeerentrydrafts:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'editpeerentrydrafts:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'editentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5'
-  - 'createentries:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'publishentries:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'deleteentries:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'publishpeerentries:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'deletepeerentries:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'editpeerentries:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'publishpeerentrydrafts:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'deletepeerentrydrafts:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'editpeerentrydrafts:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'editentries:f82c5147-f86c-4271-bddd-efe754d2ac08'
-  - 'createentries:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'publishentries:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'deleteentries:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'publishpeerentries:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'deletepeerentries:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'editpeerentries:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'publishpeerentrydrafts:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'deletepeerentrydrafts:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'editpeerentrydrafts:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'editentries:c07eddc2-b81a-4da4-b158-be51d92e0dba'
-  - 'createentries:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'publishentries:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'deleteentries:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'publishpeerentries:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'deletepeerentries:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'editpeerentries:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'publishpeerentrydrafts:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'deletepeerentrydrafts:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'editpeerentrydrafts:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'editentries:bea6f06f-12a3-4d09-87c6-94d98009d10e'
-  - 'publishentries:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce'
-  - 'publishpeerentrydrafts:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce'
-  - 'deletepeerentrydrafts:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce'
-  - 'editpeerentrydrafts:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce'
-  - 'editentries:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce'
-  - 'editglobalset:315a30a3-e7a6-4cfc-adea-460fec48aba9'
-  - 'editglobalset:92e275a5-e6b3-46c4-aa82-edba763a9f57'
-  - 'saveassetinvolume:1bc7b595-8601-44b4-b427-0e927919a810'
-  - 'createfoldersinvolume:1bc7b595-8601-44b4-b427-0e927919a810'
-  - 'viewpeerfilesinvolume:1bc7b595-8601-44b4-b427-0e927919a810'
-  - 'viewvolume:1bc7b595-8601-44b4-b427-0e927919a810'
-  - 'saveassetinvolume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
-  - 'createfoldersinvolume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
-  - 'viewpeerfilesinvolume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
-  - 'viewvolume:ea6d6b66-2a4a-411b-a022-a62793429d7c'
-  - 'navigation-editnav:be7e21da-3d72-4591-8a66-e7de59c87263'
-  - 'navigation-managenav:be7e21da-3d72-4591-8a66-e7de59c87263'
-  - 'navigation-editnav:784550ee-5357-46ca-beda-75e0d4c17c6b'
-  - 'navigation-managenav:784550ee-5357-46ca-beda-75e0d4c17c6b'
-  - 'navigation-editnav:3e900d98-54ec-4e2d-a91b-7ede3467ce55'
-  - 'navigation-managenav:3e900d98-54ec-4e2d-a91b-7ede3467ce55'
-  - 'navigation-editnav:204c7ef5-6fd9-4998-9eef-249007931cbc'
-  - 'navigation-managenav:204c7ef5-6fd9-4998-9eef-249007931cbc'
-  - 'navigation-editnav:c760f6d8-ce7d-4f75-9c11-52c6d89dddd6'
-  - 'navigation-managenav:c760f6d8-ce7d-4f75-9c11-52c6d89dddd6'
+  - 'editsite:e3415183-c41b-406f-b496-b97591cc0484' # Institut de Schaltin
+  - 'navigation-editnav:204c7ef5-6fd9-4998-9eef-249007931cbc' # Footer nav 3
+  - 'navigation-editnav:3e900d98-54ec-4e2d-a91b-7ede3467ce55' # Footer nav 2
+  - 'navigation-editnav:784550ee-5357-46ca-beda-75e0d4c17c6b' # Footer nav 1
+  - 'navigation-editnav:be7e21da-3d72-4591-8a66-e7de59c87263' # Navigation principale
+  - 'navigation-editnav:c760f6d8-ce7d-4f75-9c11-52c6d89dddd6' # Footer legal nav
+  - 'navigation-managenav:204c7ef5-6fd9-4998-9eef-249007931cbc' # Footer nav 3
+  - 'navigation-managenav:3e900d98-54ec-4e2d-a91b-7ede3467ce55' # Footer nav 2
+  - 'navigation-managenav:784550ee-5357-46ca-beda-75e0d4c17c6b' # Footer nav 1
+  - 'navigation-managenav:be7e21da-3d72-4591-8a66-e7de59c87263' # Navigation principale
+  - 'navigation-managenav:c760f6d8-ce7d-4f75-9c11-52c6d89dddd6' # Footer legal nav
+  - 'saveassets:1bc7b595-8601-44b4-b427-0e927919a810' # Video
+  - 'saveassets:ea6d6b66-2a4a-411b-a022-a62793429d7c' # Image Optimized
+  - 'saveentries:13fef461-c9f9-4bb3-a8e2-02de8fa96df3' # Contact
+  - 'saveentries:20358850-5954-4f58-8dc5-0b46ec90da16' # Accueil
+  - 'saveentries:31ad9b5c-ed47-4253-8528-65c2d6286ea5' # Blog
+  - 'saveentries:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce' # Services
+  - 'saveentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'saveentries:4c41527f-d1e5-4351-9536-7acfbe62669f' # Devis
+  - 'saveentries:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'saveentries:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'saveentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'saveentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'saveentries:f344c84e-a3c4-49e3-8038-660f592f9d47' # Jobs
+  - 'saveentries:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'savepeerentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'savepeerentries:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'savepeerentries:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'savepeerentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'savepeerentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'savepeerentries:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'savepeerentrydrafts:13fef461-c9f9-4bb3-a8e2-02de8fa96df3' # Contact
+  - 'savepeerentrydrafts:20358850-5954-4f58-8dc5-0b46ec90da16' # Accueil
+  - 'savepeerentrydrafts:31ad9b5c-ed47-4253-8528-65c2d6286ea5' # Blog
+  - 'savepeerentrydrafts:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce' # Services
+  - 'savepeerentrydrafts:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'savepeerentrydrafts:4c41527f-d1e5-4351-9536-7acfbe62669f' # Devis
+  - 'savepeerentrydrafts:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'savepeerentrydrafts:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'savepeerentrydrafts:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'savepeerentrydrafts:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'savepeerentrydrafts:f344c84e-a3c4-49e3-8038-660f592f9d47' # Jobs
+  - 'savepeerentrydrafts:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'viewassets:1bc7b595-8601-44b4-b427-0e927919a810' # Video
+  - 'viewassets:ea6d6b66-2a4a-411b-a022-a62793429d7c' # Image Optimized
+  - 'viewentries:13fef461-c9f9-4bb3-a8e2-02de8fa96df3' # Contact
+  - 'viewentries:20358850-5954-4f58-8dc5-0b46ec90da16' # Accueil
+  - 'viewentries:31ad9b5c-ed47-4253-8528-65c2d6286ea5' # Blog
+  - 'viewentries:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce' # Services
+  - 'viewentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'viewentries:4c41527f-d1e5-4351-9536-7acfbe62669f' # Devis
+  - 'viewentries:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'viewentries:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'viewentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'viewentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'viewentries:f344c84e-a3c4-49e3-8038-660f592f9d47' # Jobs
+  - 'viewentries:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'viewpeerassets:1bc7b595-8601-44b4-b427-0e927919a810' # Video
+  - 'viewpeerassets:ea6d6b66-2a4a-411b-a022-a62793429d7c' # Image Optimized
+  - 'viewpeerentries:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'viewpeerentries:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'viewpeerentries:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'viewpeerentries:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'viewpeerentries:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'viewpeerentries:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page
+  - 'viewpeerentrydrafts:13fef461-c9f9-4bb3-a8e2-02de8fa96df3' # Contact
+  - 'viewpeerentrydrafts:20358850-5954-4f58-8dc5-0b46ec90da16' # Accueil
+  - 'viewpeerentrydrafts:31ad9b5c-ed47-4253-8528-65c2d6286ea5' # Blog
+  - 'viewpeerentrydrafts:35501ad3-f7ed-48c2-b273-8aa2bfbc9bce' # Services
+  - 'viewpeerentrydrafts:3e5a9a8d-32e0-449e-ada7-2da5b779c575' # Jobs post
+  - 'viewpeerentrydrafts:4c41527f-d1e5-4351-9536-7acfbe62669f' # Devis
+  - 'viewpeerentrydrafts:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  - 'viewpeerentrydrafts:c07eddc2-b81a-4da4-b158-be51d92e0dba' # Référence
+  - 'viewpeerentrydrafts:dc3b3a29-3d83-4b26-a4ca-0ce4c0cb61b5' # Landing page
+  - 'viewpeerentrydrafts:f08c2cd5-ea7b-4600-95fd-e924af4c8bf6' # Blog post
+  - 'viewpeerentrydrafts:f344c84e-a3c4-49e3-8038-660f592f9d47' # Jobs
+  - 'viewpeerentrydrafts:f82c5147-f86c-4271-bddd-efe754d2ac08' # Page

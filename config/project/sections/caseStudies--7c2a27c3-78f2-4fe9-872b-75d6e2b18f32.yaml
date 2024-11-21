@@ -1,4 +1,7 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 7f9480f9-e4e2-4922-946b-3296c403a062 # Références
 handle: caseStudies
 name: Références
 previewTargets:
@@ -15,7 +18,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: singles/casestudies

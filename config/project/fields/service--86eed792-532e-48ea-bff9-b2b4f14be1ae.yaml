@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: service
+instructions: null
+name: 'Élément de contenu - Référence contenu - Services - Service'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources:
+    - 'section:bea6f06f-12a3-4d09-87c6-94d98009d10e' # Service
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

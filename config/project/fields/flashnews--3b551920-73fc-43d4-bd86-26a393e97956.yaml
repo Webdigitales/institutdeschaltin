@@ -1,23 +1,22 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 2c6828c5-46bf-4ad6-b752-26413ff16eaa
 handle: flashnews
-instructions: ''
+instructions: null
 name: 'Message d''annonce'
 searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: ''
-  cleanupHtml: true
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''
   manualConfig: ''
-  purifierConfig: ''
-  purifyHtml: '1'
-  redactorConfig: ''
-  removeEmptyTags: '1'
-  removeInlineStyles: '1'
-  removeNbsp: '1'
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
   showHtmlButtonForNonAdmins: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false

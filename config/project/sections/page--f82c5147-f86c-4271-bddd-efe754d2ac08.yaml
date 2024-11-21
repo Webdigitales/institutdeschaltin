@@ -1,9 +1,13 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - a2da888b-db6e-4b52-99a8-e1f653f56126 # Page par défaut
+  - ad0fba5f-c5c2-4a96-b257-1be330b34493 # Page simple
 handle: page
 name: Page
 propagationMethod: all
 siteSettings:
-  e3415183-c41b-406f-b496-b97591cc0484:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
     enabledByDefault: true
     hasUrls: true
     template: structures/page

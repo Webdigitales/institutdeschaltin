@@ -1,17 +1,17 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 2c6828c5-46bf-4ad6-b752-26413ff16eaa
 handle: companyGlobalName
-instructions: ''
+instructions: null
 name: 'Nom société principale'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

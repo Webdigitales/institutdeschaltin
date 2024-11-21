@@ -1,45 +1,57 @@
-contentColumnType: text
-fieldGroup: e71d2e23-1752-4061-805e-02f7db857a29
+columnSuffix: null
+contentColumnType: string
 handle: seo
-instructions: ''
+instructions: null
 name: SEO
 searchable: true
 settings:
-  description: ''
-  hideSocial: ''
-  robots:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-  socialImage: ''
-  suffixAsPrefix: null
-  title:
-    -
-      __assoc__:
+  errorMessage: 'Component class ''ether\seo\fields\SeoField'' belongs to a disabled plugin (SEO).'
+  expectedType: ether\seo\fields\SeoField
+  settings:
+    __assoc__:
+      0:
+        - description
+        - ''
+      1:
+        - hideSocial
+        - ''
+      2:
+        - robots
         -
-          - key
-          - '1'
+          - ''
+          - ''
+          - ''
+          - ''
+          - ''
+          - ''
+      3:
+        - socialImage
+        - ''
+      5:
+        - title
         -
-          - locked
-          - '0'
-        -
-          - template
-          - '{title}'
-    -
-      __assoc__:
-        -
-          - key
-          - '2'
-        -
-          - locked
-          - '1'
-        -
-          - template
-          - ' - {{ siteName }}'
-  titleSuffix: null
+          -
+            __assoc__:
+              -
+                - key
+                - '1'
+              -
+                - locked
+                - '0'
+              -
+                - template
+                - '{title}'
+          -
+            __assoc__:
+              -
+                - key
+                - '2'
+              -
+                - locked
+                - '1'
+              -
+                - template
+                - ' - {{ siteName }}'
 translationKeyFormat: null
-translationMethod: language
-type: ether\seo\fields\SeoField
+translationMethod: none
+type: craft\fields\MissingField

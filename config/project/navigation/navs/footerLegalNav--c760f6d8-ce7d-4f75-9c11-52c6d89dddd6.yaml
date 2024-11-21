@@ -1,8 +1,12 @@
+defaultPlacement: end
 handle: footerLegalNav
-instructions: ''
-maxNodes: ''
+instructions: null
+maxNodes: null
 name: 'Footer legal nav'
-propagateNodes: true
+propagationMethod: all
+siteSettings:
+  e3415183-c41b-406f-b496-b97591cc0484: # Institut de Schaltin
+    enabled: true
 sortOrder: 5
 structure:
   maxLevels: null

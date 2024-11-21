@@ -2,6 +2,7 @@ fieldLayouts:
   b39b0f14-99f8-432d-8be3-f355a38f9bdc:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: Titre
             max: null
@@ -23,46 +26,62 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b08847d3-7b59-4d09-9630-2dcf2daa1d03
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1
+            elementCondition: null
+            fieldUid: 08c521cf-a8a6-467e-8ae6-ffcb131478c1 # Titre
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9ed3076e-ecbe-4635-9037-950748c3dd02
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 97de7b47-515f-4d89-a189-4585140f7564
+            elementCondition: null
+            fieldUid: 97de7b47-515f-4d89-a189-4585140f7564 # Intro
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 776343e6-ba97-40e6-91ec-e3ab3c12a123
+            userCondition: null
             warning: null
             width: 100
         name: 'Page header'
-        sortOrder: 1
+        uid: 8ce55672-d2c5-41f7-b9c2-3c1d874ccb0f
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8
+            elementCondition: null
+            fieldUid: 12a7f841-74b6-4229-8266-fd7a6d4dd2d8 # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 02842296-38f2-4d4e-a605-c7bc8a881da5
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: fab4046a-8f11-4ce1-bc7d-961614e40f14
+        userCondition: null
 handle: devis
 hasTitleField: false
 name: Devis
-section: 4c41527f-d1e5-4351-9536-7acfbe62669f
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heading}'
 titleTranslationKeyFormat: null

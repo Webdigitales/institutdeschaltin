@@ -1,14 +1,25 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 3cf03712-85e6-458d-b266-ebbcff427daa
 handle: matrix
-instructions: ''
+instructions: null
 name: 'Élément de contenu'
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_matrix}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    - 2b7fe80e-ed42-434d-890e-3f9877432d7f
+    - 615a42a2-2607-4ee2-b250-a39046155c4b
+    - 779cc2e4-9e7f-4e20-abee-54a409247ed9
+    - 5150d782-153e-499b-8ec7-a65f4d707471
+    - 0664554d-4ea6-4fcd-bb30-0542a39f0fde
+    - a72abfa8-746d-400a-afbb-031957851ad0
+    - c937dc55-268c-44af-9c2f-c1085d45857a
+    - d0e8aef4-7149-471d-b250-9f0585dc5d0d
+    - d5b5f457-d1bb-4627-aa63-afa22e931b97
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

@@ -37,8 +37,6 @@
         {% block headTag %}
             <head>
         {% endblock headTag %}
-						{# -- Google tag manager (plugin) -- #}
-						{{ craft.googleTagManager.headSection() }}
             {# -- Page content that should be included in the <head> -- #}
             {% block headContent %}
             {% endblock headContent %}
@@ -46,8 +44,6 @@
 
             {% block bodyTag %}
             <body class="path-{{ entry.type|lower }}">
-						{# -- Google tag manager (plugin) -- #}
-						{{ craft.googleTagManager.bodySection() }}
             {% endblock bodyTag %}
                 {# -- Page content that should be included in the <body> -- #}
                 {% block bodyContent %}

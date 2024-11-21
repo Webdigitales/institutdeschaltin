@@ -1,0 +1,69 @@
+color: null
+fieldLayouts:
+  2a337ae0-b7d0-4b4e-9348-9f7c43fb24cd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 2a68017d-e73c-4bce-9870-876debdde74a
+            handle: tag
+            includeInCards: true
+            instructions: null
+            label: Tag
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 349c1097-ebbc-4b88-86ed-16477011fc08
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: bf154b31-3025-4c4d-932d-94d1969957aa
+            handle: heading
+            includeInCards: false
+            instructions: null
+            label: Titre
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cb2fe42e-cca3-4c62-9751-7693e9f1bffc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-21T16:03:34+00:00'
+            elementCondition: null
+            fieldUid: 41dc0c40-425c-4459-beda-9c1a12cac627 # Élément de contenu - Colonnes - Colonne
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Colonne
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f83dcdf4-5669-447d-a60c-50288c6a812c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 20e89e56-bed9-43ec-9c66-611efbb5fce5
+        userCondition: null
+handle: column
+hasTitleField: false
+icon: null
+name: Colonnes
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

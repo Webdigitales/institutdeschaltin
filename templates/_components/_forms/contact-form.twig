@@ -80,6 +80,7 @@
 			</div>
 			<div class="w-full px-1 mt-2">
 				<input class="form__captcha" id="honeypotReCaptcha" name="honeypotReCaptcha" type="text">
+				{{ craft.contactFormExtensions.recaptcha | raw }}
 				<button type="submit" class="button button--primary items-center">{{ 'Send'|t }}</button>
 				{% if craft.app.session.hasFlash('error') %}
 					<p class="message error text-red-500 text-xs">{{ craft.app.session.getFlash('error') }}</p>

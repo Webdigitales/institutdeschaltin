@@ -1,4 +1,4 @@
-dateModified: 1732205957
+dateModified: 1734613356
 email:
   fromEmail: info@institutdeschaltin.be
   fromName: 'Institut de Schaltin'
@@ -7,6 +7,21 @@ email:
   transportSettings:
     command: '/usr/sbin/sendmail -t'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  imageOptimized:
+    hasUrls: true
+    name: 'Image Optimized'
+    settings:
+      path: '@imagePath'
+    type: craft\fs\Local
+    url: '@imageUrl'
+  video:
+    hasUrls: true
+    name: Video
+    settings:
+      path: '@videoPath'
+    type: craft\fs\Local
+    url: '@videoUrl'
 meta:
   __names__:
     0f6172ae-c4cf-45c4-859a-3fcc1f7097b6: Client # Client
@@ -132,6 +147,7 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       allowAttachments: '1'
+      allowedMessageFields: null
       prependSender: 'Institut de Schaltin'
       prependSubject: 'Nouveau message sur votre site internet'
       successFlashMessage: 'Votre message a été envoyé.'
@@ -151,7 +167,7 @@ plugins:
       recaptcha: '1'
       recaptchaDataBadge: bottomright
       recaptchaDebug: ''
-      recaptchaHideBadge: ''
+      recaptchaHideBadge: '1'
       recaptchaSecretKey: 6LcbA4UqAAAAAC9Csr4l243j52I2OJjqigxPOar5
       recaptchaSiteKey: 6LcbA4UqAAAAAMDpmdQbsLMGKAJSp-jvvac_K7OQ
       recaptchaThreshold: '0.5'
@@ -196,7 +212,7 @@ plugins:
         __assoc__:
           -
             - e3415183-c41b-406f-b496-b97591cc0484 # Institut de Schaltin
-            - '1'
+            - ''
   image-optimize:
     edition: standard
     enabled: true
@@ -280,7 +296,7 @@ plugins:
     enabled: false
     schemaVersion: 1.0.0
 system:
-  edition: pro
+  edition: solo
   live: true
   name: 'Institut de Schaltin'
   retryDuration: null
